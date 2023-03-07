@@ -1,10 +1,81 @@
-<svg width="582" height="582" viewBox="0 0 582 582" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="582" height="582" rx="291" fill="url(#paint0_linear)"/>
-<path d="M157.521 303.421L355.881 106.426C359.587 102.746 365.55 107.225 363.049 111.809L289.22 247.123C287.573 250.141 289.758 253.821 293.196 253.821H420.782C424.892 253.821 426.877 258.857 423.872 261.661L200.293 470.326C196.284 474.067 190.317 468.796 193.536 464.356L299.373 318.351C301.543 315.357 299.404 311.164 295.706 311.164H160.713C156.67 311.164 154.653 306.27 157.521 303.421Z" fill="white"/>
-<defs>
-<linearGradient id="paint0_linear" x1="291" y1="0" x2="291" y2="582" gradientUnits="userSpaceOnUse">
-<stop stop-color="#7BCBD4"/>
-<stop offset="1" stop-color="#29C6B7"/>
-</linearGradient>
-</defs>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="emblem" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 504.24 504.24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: url(#Sfumatura_senza_nome_28);
+      }
+
+      .cls-2, .cls-3 {
+        stroke-width: 3px;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        stroke: #fff;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-4 {
+        fill: url(#Sfumatura_senza_nome_24);
+      }
+
+      .cls-5 {
+        fill: url(#Sfumatura_senza_nome_519);
+      }
+    </style>
+    <radialGradient id="Sfumatura_senza_nome_28" data-name="Sfumatura senza nome 28" cx="252.12" cy="252.12" fx="252.12" fy="252.12" r="154.67" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#cce0f4"/>
+      <stop offset=".06" stop-color="#c2dcf2"/>
+      <stop offset=".17" stop-color="#a9d2ee"/>
+      <stop offset=".31" stop-color="#7fc2e7"/>
+      <stop offset=".46" stop-color="#46abdd"/>
+      <stop offset=".57" stop-color="#1e9cd7"/>
+      <stop offset=".87" stop-color="#0075be"/>
+      <stop offset=".99" stop-color="#005b97"/>
+    </radialGradient>
+    <radialGradient id="Sfumatura_senza_nome_519" data-name="Sfumatura senza nome 519" cx="252.12" cy="252.12" fx="252.12" fy="252.12" r="155.34" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#cce0f4"/>
+      <stop offset=".04" stop-color="#c2dcf2"/>
+      <stop offset=".09" stop-color="#a9d2ee"/>
+      <stop offset=".17" stop-color="#7fc2e7"/>
+      <stop offset=".26" stop-color="#46abdd"/>
+      <stop offset=".32" stop-color="#1e9cd7"/>
+      <stop offset=".87" stop-color="#0075be"/>
+      <stop offset=".99" stop-color="#005b97"/>
+    </radialGradient>
+    <radialGradient id="Sfumatura_senza_nome_24" data-name="Sfumatura senza nome 24" cx="252.12" cy="252.12" fx="252.12" fy="252.12" r="291.73" gradientTransform="translate(0 .11)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#cce0f4"/>
+      <stop offset="0" stop-color="#c2dcf2"/>
+      <stop offset=".01" stop-color="#a9d2ee"/>
+      <stop offset=".02" stop-color="#7fc2e7"/>
+      <stop offset=".03" stop-color="#46abdd"/>
+      <stop offset=".04" stop-color="#1e9cd7"/>
+      <stop offset=".87" stop-color="#0075be"/>
+      <stop offset=".99" stop-color="#005b97"/>
+    </radialGradient>
+  </defs>
+  <rect id="Outer_Rim" data-name="Outer Rim" class="cls-3" x="75.34" y="75.34" width="353.55" height="353.55" transform="translate(-104.43 252.12) rotate(-45)"/>
+  <circle id="Outer_Circle" data-name="Outer Circle" class="cls-2" cx="252.12" cy="252.12" r="155"/>
+  <polygon id="Outer_Star" data-name="Outer Star" class="cls-1" points="252.12 114.83 277.12 208.82 371.29 183.48 302.12 252.12 371.29 320.77 277.12 295.42 252.12 389.41 227.12 295.42 132.95 320.77 202.12 252.12 132.95 183.48 227.12 208.82 252.12 114.83"/>
+  <polygon id="Outer_Hexagon" data-name="Outer Hexagon" class="cls-5" points="277.12 208.82 227.12 208.82 202.12 252.12 227.12 295.42 277.12 295.42 302.12 252.12 277.12 208.82"/>
+  <polygon id="Inner_Star" data-name="Inner Star" class="cls-1" points="212.12 252.12 239.51 244.84 232.12 217.4 252.12 237.55 272.12 217.4 264.74 244.84 292.12 252.12 264.74 259.41 272.12 286.84 252.12 266.69 232.12 286.84 239.51 259.41 212.12 252.12"/>
+  <circle id="Center" class="cls-4" cx="252.12" cy="252.12" r="5"/>
+  <g id="Stars">
+    <polygon id="Star_W" data-name="Star W" class="cls-1" points="57.12 237.12 62.42 246.82 72.12 252.12 62.42 257.42 57.12 267.12 51.82 257.42 42.12 252.12 51.82 246.82 57.12 237.12"/>
+    <polygon id="Star_E" data-name="Star E" class="cls-1" points="447.12 237.12 452.42 246.82 462.12 252.12 452.42 257.42 447.12 267.12 441.82 257.42 432.12 252.12 441.82 246.82 447.12 237.12"/>
+    <polygon id="Star_N" data-name="Star N" class="cls-1" points="252.12 47.12 257.42 56.82 267.12 62.12 257.42 67.42 252.12 77.12 246.82 67.42 237.12 62.12 246.82 56.82 252.12 47.12"/>
+    <polygon id="Star_S" data-name="Star S" class="cls-1" points="252.12 432.12 257.42 441.82 267.12 447.12 257.42 452.42 252.12 462.12 246.82 452.42 237.12 447.12 246.82 441.82 252.12 432.12"/>
+  </g>
+  <g id="Circles">
+    <circle id="Circle_W" data-name="Circle W" class="cls-1" cx="162.12" cy="252.12" r="10"/>
+    <circle id="Cicle_E" data-name="Cicle E" class="cls-1" cx="342.12" cy="252.11" r="10"/>
+    <circle id="Circle_NE" data-name="Circle NE" class="cls-1" cx="297.12" cy="172.12" r="10"/>
+    <circle id="Circle_NW" data-name="Circle NW" class="cls-1" cx="207.12" cy="172.12" r="10"/>
+    <circle id="Circle_SE" data-name="Circle SE" class="cls-1" cx="297.12" cy="332.12" r="10"/>
+    <circle id="Circle_SW" data-name="Circle SW" class="cls-1" cx="207.12" cy="332.12" r="10"/>
+  </g>
 </svg>
