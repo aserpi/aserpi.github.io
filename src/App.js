@@ -8,7 +8,9 @@ import {
   Code,
   Grid,
 } from '@chakra-ui/react';
+
 import { ColorModeSwitcher } from './ColorModeSwitcher';
+import { Footer } from './components/Footer';
 import { Logo } from './Logo';
 import { theme } from './theme';
 
@@ -33,6 +35,8 @@ function App() {
               Learn Chakra
             </Link>
           </VStack>
+
+          <Footer />
         </Grid>
       </Box>
     </ChakraProvider>
