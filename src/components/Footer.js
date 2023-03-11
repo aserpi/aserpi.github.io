@@ -8,7 +8,7 @@ import {
   Image,
   Text,
 } from '@chakra-ui/react';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa';
 
 import logo from '../logo.svg';
 import { TextLogo } from '../textLogo';
@@ -61,6 +61,19 @@ export const Footer = () => {
         rowStart={{ base: 3, md: 2 }}
       >
         <ButtonGroup variant="ghost">
+          <IconButton
+            aria-label={'Email'}
+            icon={<FaEnvelope fontSize="1.25rem" />}
+            onClick={() => {
+              const handle = 'aserpi';
+              const tld = 'it';
+              const scheme = 'otliam';
+              window.location.href = `${scheme
+                .split('')
+                .reverse()
+                .join('')}:${handle}@${handle}.${tld}`;
+            }}
+          />
           <IconButton
             aria-label="LinkedIn"
             as="a"
