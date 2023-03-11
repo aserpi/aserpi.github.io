@@ -1,4 +1,4 @@
-import { ChakraProvider } from '@chakra-ui/react';
+import { ChakraProvider, Flex, Spacer } from '@chakra-ui/react';
 import { createHashRouter, RouterProvider } from 'react-router-dom';
 
 import { theme } from './theme';
@@ -12,13 +12,14 @@ const router = createHashRouter([
   },
 ]);
 
-function App() {
+export const App = () => {
   return (
     <ChakraProvider theme={theme}>
-      <RouterProvider router={router} />
-      <Footer />
+      <Flex direction={'column'} minHeight="100vh">
+        <RouterProvider router={router} />
+        <Spacer />
+        <Footer />
+      </Flex>
     </ChakraProvider>
   );
-}
-
-export default App;
+};

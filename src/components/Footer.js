@@ -18,40 +18,48 @@ export const Footer = () => {
     <Grid
       as="footer"
       columnGap={2}
-      justifySelf="center"
-      maxWidth="1140px"
+      margin="auto"
+      padding={{ base: 4, md: 8 }}
       templateColumns={{ base: 'auto', md: 'max-content 1fr max-content' }}
-      templateRows={{ base: '24px auto auto', md: '24px auto' }}
-      rowGap={{ base: 0, md: 2 }}
+      templateRows={{ base: 'max-content auto auto', md: 'max-content auto' }}
       role="contentinfo"
+      rowGap={2}
       width="100%"
     >
-      <GridItem
-        colSpan={{ base: 1, md: 3 }}
-        direction="column-reverse"
-        display="flex"
-      >
-        <Divider />
+      <GridItem colSpan={{ base: 1, md: 3 }} display="flex" rowStart={1}>
+        <Divider marginBottom={{ base: 2, md: 6 }} />
       </GridItem>
       <GridItem
         alignItems="center"
         display="flex"
         gap={2}
         justifyContent="center"
+        rowStart={2}
       >
         <Image height={8} src={logo} width="auto" />
         <Box height={6} width="auto">
           <TextLogo height="100%" />
         </Box>
       </GridItem>
-      <GridItem alignItems="center" display="flex" justifyContent="center">
+      <GridItem
+        alignItems="center"
+        display="flex"
+        justifyContent="center"
+        rowStart={{ base: 4, md: 2 }}
+        textAlign="center"
+      >
         <Text color="subtle" fontSize="sm" margin="auto">
           &copy; {new Date().getFullYear()} Alessandro Serpi. All rights
           reserved.
         </Text>
       </GridItem>
 
-      <GridItem alignItems="center" display="flex" justifyContent="center">
+      <GridItem
+        alignItems="center"
+        display="flex"
+        justifyContent="center"
+        rowStart={{ base: 3, md: 2 }}
+      >
         <ButtonGroup variant="ghost">
           <IconButton
             aria-label="LinkedIn"
