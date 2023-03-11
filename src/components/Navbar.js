@@ -1,5 +1,5 @@
-import { Divider, Flex, Image, Spacer } from '@chakra-ui/react';
-import { Link } from 'react-router-dom';
+import { Button, Divider, Flex, Image, Spacer } from '@chakra-ui/react';
+import { Link, NavLink } from 'react-router-dom';
 
 import logo from '../logo.svg';
 import { ColorModeSwitcher } from '../ColorModeSwitcher';
@@ -20,6 +20,9 @@ export const Navbar = () => {
             }}
           />
         </Link>
+        <Button as={NavLink} to="/projects" variant="ghost">
+          Projects
+        </Button>
         <Spacer />
         <ColorModeSwitcher justifySelf="flex-end" />
       </Flex>
