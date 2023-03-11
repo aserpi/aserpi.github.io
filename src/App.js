@@ -1,22 +1,19 @@
 import { ChakraProvider, Flex, Spacer } from '@chakra-ui/react';
-import { createHashRouter, RouterProvider } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 
 import { theme } from './theme';
 import { Footer } from './components/Footer';
+import { Navbar } from './components/Navbar';
 import { Home } from './pages/Home';
-
-const router = createHashRouter([
-  {
-    path: '/',
-    element: <Home />,
-  },
-]);
 
 export const App = () => {
   return (
     <ChakraProvider theme={theme}>
       <Flex direction={'column'} minHeight="100vh">
-        <RouterProvider router={router} />
+        <Navbar />
+        <Routes>
+          <Route element={<Home />} path="/" />
+        </Routes>
         <Spacer />
         <Footer />
       </Flex>
