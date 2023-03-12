@@ -4,19 +4,21 @@ export const theme = extendTheme({
   components: {
     Button: {
       variants: {
-        ghost: {
+        ghostLight: {
+          transitionDuration: '.2s',
           _hover: {
-            background: 'transparent',
-            transitionDuration: '.2s',
             transform: 'scale(1.2)',
-            transitionTimingFunction: 'ease-in-out',
           },
         },
       },
     },
+    Heading: { baseStyle: { fontWeight: 'semibold' } },
   },
   config: {
     initialColorMode: 'system',
     useSystemColorMode: false,
+  },
+  semanticTokens: {
+    colors: { accent: { default: 'blue.500', _dark: 'blue.400' } },
   },
 });

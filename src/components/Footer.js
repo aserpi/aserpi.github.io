@@ -2,72 +2,70 @@ import {
   Box,
   ButtonGroup,
   Divider,
+  Flex,
   Grid,
   GridItem,
   IconButton,
   Image,
+  Link,
   Text,
 } from '@chakra-ui/react';
 import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa';
 
-import logo from '../logo.svg';
-import { TextLogo } from '../textLogo';
+import logo from '../images/logo.svg';
+import { TextLogo } from './TextLogo';
 
 export const Footer = () => {
   return (
     <Grid
       as="footer"
       columnGap={2}
-      margin="auto"
-      padding={{ base: 4, md: 8 }}
-      templateColumns={{ base: 'auto', md: 'max-content 1fr max-content' }}
+      paddingBottom={6}
+      paddingTop={8}
+      paddingX={2}
+      templateColumns={{ base: 'auto', md: 'auto auto' }}
       templateRows={{ base: 'max-content auto auto', md: 'max-content auto' }}
       role="contentinfo"
-      rowGap={2}
+      rowGap={{ base: 2, md: 6 }}
       width="100%"
     >
-      <GridItem colSpan={{ base: 1, md: 3 }} display="flex" rowStart={1}>
-        <Divider marginBottom={{ base: 2, md: 6 }} />
+      <GridItem
+        colSpan={{ base: 1, md: 2 }}
+        display="flex"
+        marginBottom={{ base: 4, md: 0 }}
+        rowStart={1}
+      >
+        <Divider />
       </GridItem>
       <GridItem
         alignItems="center"
+        colStart={1}
         display="flex"
         gap={2}
-        justifyContent="center"
+        justifyContent={{ base: 'center', md: 'left' }}
+        marginLeft={{ base: 0, md: 2 }}
         rowStart={2}
       >
         <Image height={8} src={logo} width="auto" />
-        <Box height={6} width="auto">
+        <Box height={6} width="auto" zIndex="docked">
           <TextLogo height="100%" />
         </Box>
       </GridItem>
       <GridItem
         alignItems="center"
+        colStart={{ base: 1, md: 2 }}
         display="flex"
-        justifyContent="center"
-        rowStart={{ base: 4, md: 2 }}
-        textAlign="center"
-      >
-        <Text color="subtle" fontSize="sm" margin="auto">
-          &copy; {new Date().getFullYear()} Alessandro Serpi. All rights
-          reserved.
-        </Text>
-      </GridItem>
-
-      <GridItem
-        alignItems="center"
-        display="flex"
-        justifyContent="center"
+        justifyContent={{ base: 'center', md: 'right' }}
         rowStart={{ base: 3, md: 2 }}
       >
-        <ButtonGroup variant="ghost">
+        <ButtonGroup marginRight={{ base: 0, md: 2 }} variant="ghostLight">
           <IconButton
             aria-label={'Email'}
             icon={<FaEnvelope fontSize="1.25rem" />}
             onClick={() => {
               const handle = 'aserpi';
-              const tld = 'it';
               const scheme = 'otliam';
+              const tld = 'it';
               window.location.href = `${scheme
                 .split('')
                 .reverse()
@@ -79,14 +77,30 @@ export const Footer = () => {
             as="a"
             href="https://linkedin.com/in/alessandro-serpi"
             icon={<FaLinkedin fontSize="1.25rem" />}
+            target="_blank"
           />
           <IconButton
             aria-label="GitHub"
             as="a"
             href="https://github.com/aserpi"
             icon={<FaGithub fontSize="1.25rem" />}
+            target="_blank"
           />
         </ButtonGroup>
+      </GridItem>
+      <GridItem
+        alignItems="center"
+        colEnd={{ base: 2, md: 3 }}
+        colStart={1}
+        display="flex"
+        justifyContent="center"
+        rowStart={{ base: 4, md: 2 }}
+        textAlign="center"
+      >
+        <Text color="subtle" fontSize="sm" margin="auto">
+          &copy; {new Date().getFullYear()} Alessandro Serpi. All rights
+          reserved.
+        </Text>
       </GridItem>
     </Grid>
   );

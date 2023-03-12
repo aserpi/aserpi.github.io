@@ -1,4 +1,4 @@
-import { ChakraProvider, Flex, Spacer } from '@chakra-ui/react';
+import { Box, ChakraProvider, Flex, Spacer } from '@chakra-ui/react';
 import { Route, Routes } from 'react-router-dom';
 
 import { theme } from './theme';
@@ -13,8 +13,9 @@ import { Projects } from './pages/Projects';
 export const App = () => {
   return (
     <ChakraProvider theme={theme}>
+      <Navbar />
       <Flex direction={'column'} minHeight="100vh">
-        <Navbar />
+        <Box height={20} />
         <Routes>
           <Route element={<Home />} path="/" />
           <Route element={<Certifications />} path="certifications" />

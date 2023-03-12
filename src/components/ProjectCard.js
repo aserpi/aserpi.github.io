@@ -1,32 +1,133 @@
 import {
   Card,
   CardBody,
-  CardHeader,
-  Heading,
+  CardFooter,
+  Flex,
   IconButton,
+  Tag,
+  TagLabel,
+  TagLeftIcon,
+  Text,
+  Wrap,
 } from '@chakra-ui/react';
-import { FaGithub } from 'react-icons/fa';
+import {
+  FaAws,
+  FaDocker,
+  FaGitAlt,
+  FaGithub,
+  FaGitlab,
+  FaJsSquare,
+  FaPython,
+  FaReact,
+} from 'react-icons/fa';
+import { SiGithubactions } from 'react-icons/si';
+import PropTypes from 'prop-types';
 
-export const ProjectCard = ({ name, repo, ...props }) => {
+import { SplunkIcon } from './icons/SplunkIcon';
+import { ProjectCardName } from './ProjectCardName';
+
+const tagFormats = {
+  aws: {
+    icon: FaAws,
+    name: 'AWS',
+  },
+  docker: {
+    icon: FaDocker,
+    name: 'Docker',
+  },
+  githubActions: {
+    icon: SiGithubactions,
+    name: 'GitHub actions',
+  },
+  gitlabCicd: {
+    icon: FaGitlab,
+    name: 'Gitlab CI/CD',
+  },
+  javascript: {
+    icon: FaJsSquare,
+    name: 'JavaScript',
+  },
+  python: {
+    icon: FaPython,
+    name: 'Python',
+  },
+  react: {
+    icon: FaReact,
+    name: 'React',
+  },
+  splunk: {
+    icon: SplunkIcon,
+    name: 'Splunk',
+  },
+};
+
+export const ProjectCard = ({
+  category,
+  desc,
+  link,
+  name,
+  prerelease,
+  repo,
+  tags,
+  ...props
+}) => {
   return (
     <Card {...props}>
-      <CardHeader>
-        <Heading size="md">{name}</Heading>
-        <IconButton
-          as="a"
-          aria-label={`GitHub link for ${name}`}
-          href={repo}
-          icon={<FaGithub fontSize="1.25rem" />}
-          target="_blank"
-          variant="ghost"
+      <CardBody>
+        <Flex alignItems="center" gap={1}>
+          <Text casing="uppercase" fontSize="sm">
+            {category}
+          </Text>
+
+          {repo !== undefined && repo !== null ? (
+            <IconButton
+              aria-label={`GitHub link for ${name}`}
+              as="a"
+              href={repo}
+              icon={
+                repo.startsWith('https://github') ? (
+                  <FaGithub />
+                ) : repo.startsWith('https://gitlab') ? (
+                  <FaGitlab />
+                ) : (
+                  <FaGitAlt />
+                )
+              }
+              marginLeft={-1.5}
+              target="_blank"
+              variant="ghostLight"
+            />
+          ) : null}
+        </Flex>
+        <ProjectCardName
+          link={link}
+          name={name}
+          marginBottom={2}
+          prerelease={prerelease}
         />
-      </CardHeader>
-      <CardBody></CardBody>
+        <Text>{desc}</Text>
+      </CardBody>
+      <CardFooter paddingTop={0}>
+        <Wrap>
+          {tags.map(tag => {
+            const { icon, name } = tagFormats[tag];
+            return (
+              <Tag key={tag}>
+                <TagLeftIcon as={icon} />
+                <TagLabel>{name}</TagLabel>
+              </Tag>
+            );
+          })}
+        </Wrap>
+      </CardFooter>
     </Card>
   );
 };
 
 ProjectCard.propTypes = {
-  name: String,
-  repo: String,
+  category: PropTypes.string.isRequired,
+  desc: PropTypes.string.isRequired,
+  repo: PropTypes.string,
+  tags: PropTypes.arrayOf(PropTypes.string),
+  ...ProjectCardName.propTypes,
 };

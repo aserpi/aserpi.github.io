@@ -1,13 +1,18 @@
-import { Flex } from '@chakra-ui/react';
-import { ProjectCard } from '../components/ProjectCard';
+import { Box, Code, Grid, Text, VStack } from '@chakra-ui/react';
+
+import { RotatingLogo } from '../components/RotatingLogo';
 
 export const Education = () => {
   return (
-    <Flex flexWrap="wrap">
-      <ProjectCard
-        repo={'https://github.com/aserpi/aserpi.github.io'}
-        name="This site!"
-      />
-    </Flex>
+    <Box textAlign="center" fontSize="xl">
+      <Grid p={3}>
+        <VStack spacing={8}>
+          <RotatingLogo h="40vmin" pointerEvents="none" />
+          <Text>
+            <Code fontSize="xl">Work in Progress</Code>
+          </Text>
+        </VStack>
+      </Grid>
+    </Box>
   );
 };
