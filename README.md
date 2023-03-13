@@ -10,9 +10,9 @@ In order of priority:
 - ~~Navbar: fix at the top~~
 - ~~Navbar: ease transition out~~
 - ~~Navbar: drawer for small screens~~
-- Experience: timeline
-- Certifications: cards
-- Courses: to be defined
+- ~~Experience: timeline~~
+- ~~Certifications: cards~~
+- Courses: cards
 - Home: presentation
 - 404: not found
 - README: write

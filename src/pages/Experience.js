@@ -41,7 +41,7 @@ export const Experience = () => {
       icon: <SapienzaIcon overflow="visible" />,
       iconStyle: {
         boxShadow: 'none',
-        marginLeft: -31,
+        marginLeft: { base: 0, sm: -30.8 },
         transform: 'scale(2.5)',
       },
       title: 'Master of Science in Engineering in Computer Science',
@@ -57,7 +57,7 @@ export const Experience = () => {
       icon: <SapienzaIcon overflow="visible" />,
       iconStyle: {
         boxShadow: 'none',
-        marginLeft: -31,
+        marginLeft: { base: 0, sm: -30.8 },
         transform: 'scale(2.5)',
       },
       title: 'Bachelor of Science in Computer and System Engineering',

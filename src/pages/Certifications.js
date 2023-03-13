@@ -135,11 +135,13 @@ export const Certifications = () => {
               }}
             >
               <GridItem area="logo" as={Flex} justifyContent="center">
-                <Image
-                  height={120}
-                  marginBottom={2}
-                  src={certification.image}
-                />
+                <Link href={certification.link} target="_blank_">
+                  <Image
+                    height={120}
+                    marginBottom={2}
+                    src={certification.image}
+                  />
+                </Link>
               </GridItem>
               <GridItem area="organization">
                 <Text casing="uppercase" fontSize="sm">
