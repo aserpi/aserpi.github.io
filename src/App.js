@@ -22,6 +22,7 @@ export const App = () => {
           <Route element={<Courses />} path="courses" />
           <Route element={<Experience />} path="experience" />
           <Route element={<Projects />} path="projects" />
+          <Route element={<Home />} path="*" />
         </Routes>
         <Spacer />
         <Footer />

@@ -8,6 +8,7 @@ export const ExperienceTimelineElement = ({
   desc,
   date,
   icon,
+  iconStyle,
   title,
   ...props
 }) => {
@@ -26,11 +27,7 @@ export const ExperienceTimelineElement = ({
         if (companyUrl !== undefined && companyUrl !== null)
           window.open(companyUrl, '_blank');
       }}
-      iconStyle={{
-        boxShadow: 'none',
-        marginLeft: -31,
-        transform: 'scale(2.5)',
-      }}
+      iconStyle={iconStyle}
       {...props}
     >
       <Text
@@ -58,5 +55,6 @@ ExperienceTimelineElement.propTypes = {
   date: PropTypes.string.isRequired,
   desc: PropTypes.arrayOf(PropTypes.string).isRequired,
   icon: PropTypes.node.isRequired,
+  iconStyle: PropTypes.object,
   title: PropTypes.string.isRequired,
 };

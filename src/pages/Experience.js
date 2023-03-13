@@ -2,8 +2,10 @@ import { VerticalTimeline } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 
 import { ExperienceTimelineElement } from '../components/ExperienceTimelineElement';
+import { MoviriIcon } from '../components/icons/MoviriIcon';
 import { SapienzaIcon } from '../components/icons/SapienzaIcon';
 import '../styles/experienceTimelineElement.css';
+import { useColorModeValue } from '@chakra-ui/react';
 
 export const Experience = () => {
   const experiences = [
@@ -17,6 +19,14 @@ export const Experience = () => {
         'Cooperated with L3 analysts in root cause analysis and threat hunting campaigns.',
         'Built a fraud detection platform with cloud-native OSINT capabilities that increased fraudster discovery by 500% and saved over 7000 person-hours a year.',
       ],
+      icon: <MoviriIcon overflow="visible" />,
+      iconStyle: {
+        background: useColorModeValue(
+          'var(--chakra-colors-chakra-subtle-bg)',
+          'white'
+        ),
+        boxShadow: 'none',
+      },
       title: 'Cyber Security Analyst',
     },
     {
@@ -28,6 +38,11 @@ export const Experience = () => {
       ],
       date: '2021/01',
       icon: <SapienzaIcon overflow="visible" />,
+      iconStyle: {
+        boxShadow: 'none',
+        marginLeft: -31,
+        transform: 'scale(2.5)',
+      },
       title: 'Master of Science in Engineering in Computer Science',
     },
     {
@@ -38,6 +53,11 @@ export const Experience = () => {
       ],
       date: '2018/12',
       icon: <SapienzaIcon overflow="visible" />,
+      iconStyle: {
+        boxShadow: 'none',
+        marginLeft: -31,
+        transform: 'scale(2.5)',
+      },
       title: 'Bachelor of Science in Computer and System Engineering',
     },
   ];
