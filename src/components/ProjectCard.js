@@ -4,6 +4,7 @@ import {
   CardFooter,
   Flex,
   IconButton,
+  Link,
   Tag,
   TagLabel,
   TagLeftIcon,
@@ -75,11 +76,7 @@ export const ProjectCard = ({
   const tagVariant = useColorModeValue('outline', 'subtle');
 
   return (
-    <Card
-      boxShadow="0 3px 0 var(--chakra-colors-accent)"
-      variant="filled"
-      {...props}
-    >
+    <Card variant="filled" {...props}>
       <CardBody>
         <Flex alignItems="center" gap={1}>
           <Text casing="uppercase" fontSize="sm">
@@ -89,7 +86,7 @@ export const ProjectCard = ({
           {repo !== undefined && repo !== null ? (
             <IconButton
               aria-label={`GitHub link for ${name}`}
-              as="a"
+              as={Link}
               href={repo}
               icon={
                 repo.startsWith('https://github') ? (

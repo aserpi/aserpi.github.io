@@ -1,8 +1,13 @@
 import { Box, Code, Grid, Text, VStack } from '@chakra-ui/react';
+import { useEffect } from 'react';
 
 import { RotatingLogo } from '../components/RotatingLogo';
 
 export const Courses = () => {
+  useEffect(() => {
+    document.title = 'Courses | aserpi';
+  }, []);
+
   return (
     <Box textAlign="center" fontSize="xl">
       <Grid p={3}>

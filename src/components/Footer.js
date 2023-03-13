@@ -30,8 +30,8 @@ export const Footer = () => {
       width="100%"
     >
       <GridItem
+        as={Flex}
         colSpan={{ base: 1, md: 2 }}
-        display="flex"
         marginBottom={{ base: 4, md: 0 }}
         rowStart={1}
       >
@@ -39,8 +39,8 @@ export const Footer = () => {
       </GridItem>
       <GridItem
         alignItems="center"
+        as={Flex}
         colStart={1}
-        display="flex"
         gap={2}
         justifyContent={{ base: 'center', md: 'left' }}
         marginLeft={{ base: 0, md: 2 }}
@@ -53,8 +53,8 @@ export const Footer = () => {
       </GridItem>
       <GridItem
         alignItems="center"
+        as={Flex}
         colStart={{ base: 1, md: 2 }}
-        display="flex"
         justifyContent={{ base: 'center', md: 'right' }}
         rowStart={{ base: 3, md: 2 }}
       >
@@ -74,14 +74,14 @@ export const Footer = () => {
           />
           <IconButton
             aria-label="LinkedIn"
-            as="a"
+            as={Link}
             href="https://linkedin.com/in/alessandro-serpi"
             icon={<FaLinkedin fontSize="1.25rem" />}
             target="_blank"
           />
           <IconButton
             aria-label="GitHub"
-            as="a"
+            as={Link}
             href="https://github.com/aserpi"
             icon={<FaGithub fontSize="1.25rem" />}
             target="_blank"
@@ -90,9 +90,9 @@ export const Footer = () => {
       </GridItem>
       <GridItem
         alignItems="center"
+        as={Flex}
         colEnd={{ base: 2, md: 3 }}
         colStart={1}
-        display="flex"
         justifyContent="center"
         rowStart={{ base: 4, md: 2 }}
         textAlign="center"

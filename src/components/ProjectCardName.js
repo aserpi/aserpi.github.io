@@ -1,4 +1,11 @@
-import { Flex, Heading, Tag, Text, useColorModeValue } from '@chakra-ui/react';
+import {
+  Flex,
+  Heading,
+  Link,
+  Tag,
+  Text,
+  useColorModeValue,
+} from '@chakra-ui/react';
 import PropTypes from 'prop-types';
 
 export const ProjectCardName = ({ prerelease, link, name, ...props }) => {
@@ -7,7 +14,7 @@ export const ProjectCardName = ({ prerelease, link, name, ...props }) => {
   return (
     <Flex direction="row" gap={2} {...props}>
       {link !== undefined && link !== null ? (
-        <Heading as="a" color="accent" href={link} size="md" target="_blank">
+        <Heading as={Link} color="accent" href={link} size="md" target="_blank">
           {name}
         </Heading>
       ) : (

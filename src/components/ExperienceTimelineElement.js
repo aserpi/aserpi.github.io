@@ -1,5 +1,5 @@
 import { VerticalTimelineElement } from 'react-vertical-timeline-component';
-import { Heading, Text } from '@chakra-ui/react';
+import { Heading, Link, Text } from '@chakra-ui/react';
 import PropTypes from 'prop-types';
 
 export const ExperienceTimelineElement = ({
@@ -31,7 +31,7 @@ export const ExperienceTimelineElement = ({
       {...props}
     >
       <Text
-        as="a"
+        as={Link}
         casing="uppercase"
         fontSize="sm"
         href={companyUrl}

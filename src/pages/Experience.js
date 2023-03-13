@@ -1,3 +1,5 @@
+import { useColorModeValue } from '@chakra-ui/react';
+import { useEffect } from 'react';
 import { VerticalTimeline } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 
@@ -5,7 +7,6 @@ import { ExperienceTimelineElement } from '../components/ExperienceTimelineEleme
 import { MoviriIcon } from '../components/icons/MoviriIcon';
 import { SapienzaIcon } from '../components/icons/SapienzaIcon';
 import '../styles/experienceTimelineElement.css';
-import { useColorModeValue } from '@chakra-ui/react';
 
 export const Experience = () => {
   const experiences = [
@@ -47,6 +48,7 @@ export const Experience = () => {
     },
     {
       company: 'Sapienza University of Rome',
+      companyUrl: 'https://www.uniroma1.it/',
       desc: [
         'Specialization in software architectures and security. Mark 102/110.',
         'Italian name: Laurea in Ingegneria Informatica e Automatica.',
@@ -61,6 +63,10 @@ export const Experience = () => {
       title: 'Bachelor of Science in Computer and System Engineering',
     },
   ];
+
+  useEffect(() => {
+    document.title = 'Experience | aserpi';
+  }, []);
 
   return (
     <VerticalTimeline animate={false} lineColor="var(--chakra-colors-accent)">

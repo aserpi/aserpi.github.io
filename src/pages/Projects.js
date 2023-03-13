@@ -1,4 +1,5 @@
 import { Flex } from '@chakra-ui/react';
+import { useEffect } from 'react';
 
 import { ProjectCard } from '../components/ProjectCard';
 
@@ -53,6 +54,10 @@ export const Projects = () => {
       tags: ['docker', 'gitlabCicd'],
     },
   ];
+
+  useEffect(() => {
+    document.title = 'Projects | aserpi';
+  }, []);
 
   return (
     <Flex
