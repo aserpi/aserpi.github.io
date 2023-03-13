@@ -2,7 +2,7 @@ import { Box, Code, Grid, Text, VStack } from '@chakra-ui/react';
 
 import { RotatingLogo } from '../components/RotatingLogo';
 
-export const Education = () => {
+export const Courses = () => {
   return (
     <Box textAlign="center" fontSize="xl">
       <Grid p={3}>

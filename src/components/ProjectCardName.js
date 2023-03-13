@@ -1,7 +1,9 @@
-import { Flex, Heading, Tag, Text } from '@chakra-ui/react';
+import { Flex, Heading, Tag, Text, useColorModeValue } from '@chakra-ui/react';
 import PropTypes from 'prop-types';
 
 export const ProjectCardName = ({ prerelease, link, name, ...props }) => {
+  const tagVariant = useColorModeValue('outline', 'subtle');
+
   return (
     <Flex direction="row" gap={2} {...props}>
       {link !== undefined && link !== null ? (
@@ -14,7 +16,7 @@ export const ProjectCardName = ({ prerelease, link, name, ...props }) => {
         </Heading>
       )}
       {prerelease ? (
-        <Tag>
+        <Tag variant={tagVariant}>
           <Text casing="uppercase">{prerelease}</Text>
         </Tag>
       ) : null}

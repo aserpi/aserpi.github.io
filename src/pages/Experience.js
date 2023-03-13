@@ -2,6 +2,7 @@ import { VerticalTimeline } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 
 import { ExperienceTimelineElement } from '../components/ExperienceTimelineElement';
+import { SapienzaIcon } from '../components/icons/SapienzaIcon';
 import '../styles/experienceTimelineElement.css';
 
 export const Experience = () => {
@@ -18,10 +19,31 @@ export const Experience = () => {
       ],
       title: 'Cyber Security Analyst',
     },
+    {
+      company: 'Sapienza University of Rome',
+      companyUrl: 'https://corsidilaurea.uniroma1.it/en/corso/2019/30430/home',
+      desc: [
+        'Specialization in cyber security. Mark 110/110 with honours.',
+        'Awarded a certificate in recognition of extracurricular research activities (Honours Programme).',
+      ],
+      date: '2021/01',
+      icon: <SapienzaIcon overflow="visible" />,
+      title: 'Master of Science in Engineering in Computer Science',
+    },
+    {
+      company: 'Sapienza University of Rome',
+      desc: [
+        'Specialization in software architectures and security. Mark 102/110.',
+        'Italian name: Laurea in Ingegneria Informatica e Automatica.',
+      ],
+      date: '2018/12',
+      icon: <SapienzaIcon overflow="visible" />,
+      title: 'Bachelor of Science in Computer and System Engineering',
+    },
   ];
 
   return (
-    <VerticalTimeline lineColor="var(--chakra-colors-accent)">
+    <VerticalTimeline animate={false} lineColor="var(--chakra-colors-accent)">
       {experiences.map((experience, idx) => (
         <ExperienceTimelineElement key={idx} {...experience} />
       ))}

@@ -8,6 +8,7 @@ import {
   TagLabel,
   TagLeftIcon,
   Text,
+  useColorModeValue,
   Wrap,
 } from '@chakra-ui/react';
 import {
@@ -71,8 +72,14 @@ export const ProjectCard = ({
   tags,
   ...props
 }) => {
+  const tagVariant = useColorModeValue('outline', 'subtle');
+
   return (
-    <Card {...props}>
+    <Card
+      boxShadow="0 3px 0 var(--chakra-colors-accent)"
+      variant="filled"
+      {...props}
+    >
       <CardBody>
         <Flex alignItems="center" gap={1}>
           <Text casing="uppercase" fontSize="sm">
@@ -112,7 +119,7 @@ export const ProjectCard = ({
           {tags.map(tag => {
             const { icon, name } = tagFormats[tag];
             return (
-              <Tag key={tag}>
+              <Tag key={tag} variant={tagVariant}>
                 <TagLeftIcon as={icon} />
                 <TagLabel>{name}</TagLabel>
               </Tag>

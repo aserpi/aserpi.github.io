@@ -15,7 +15,7 @@ export const ExperienceTimelineElement = ({
     <VerticalTimelineElement
       contentStyle={{
         background: 'var(--chakra-colors-chakra-subtle-bg)',
-        boxShadow: 'none',
+        boxShadow: '0 3px 0 var(--chakra-colors-accent)',
       }}
       contentArrowStyle={{
         borderRightColor: 'var(--chakra-colors-chakra-subtle-bg)',
@@ -27,8 +27,9 @@ export const ExperienceTimelineElement = ({
           window.open(companyUrl, '_blank');
       }}
       iconStyle={{
-        boxShadow:
-          '0 0 0 4px var(--chakra-colors-accent),inset 0 2px 0 rgba(0,0,0,.08),0 3px 0 4px rgba(0,0,0,.05)',
+        boxShadow: 'none',
+        marginLeft: -31,
+        transform: 'scale(2.5)',
       }}
       {...props}
     >
@@ -56,6 +57,6 @@ ExperienceTimelineElement.propTypes = {
   companyUrl: PropTypes.string,
   date: PropTypes.string.isRequired,
   desc: PropTypes.arrayOf(PropTypes.string).isRequired,
-  icon: PropTypes.string.isRequired,
+  icon: PropTypes.node.isRequired,
   title: PropTypes.string.isRequired,
 };

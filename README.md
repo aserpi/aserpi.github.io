@@ -12,7 +12,7 @@ In order of priority:
 - ~~Navbar: drawer for small screens~~
 - Experience: timeline
 - Certifications: cards
-- Education: to be defined
+- Courses: to be defined
 - Home: presentation
 - 404: not found
 - README: write

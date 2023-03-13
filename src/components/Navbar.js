@@ -22,7 +22,7 @@ import { useEffect, useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
 export const Navbar = () => {
-  const routes = ['experience', 'education', 'certifications', 'projects'];
+  const routes = ['experience', 'certifications', 'courses', 'projects'];
 
   const btnRef = React.useRef();
   const { isOpen, onOpen, onClose } = useDisclosure();
