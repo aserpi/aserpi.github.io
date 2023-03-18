@@ -6,8 +6,8 @@ export const TextLogo = props => {
 
   return (
     <Tooltip
-      label={'Raginy font by Artefact Project'}
-      ariaLabel={'Raginy font by Artefact Project'}
+      label="Raginy font by Artefact Project"
+      aria-label="Raginy font by Artefact Project"
     >
       <svg
         id="Layer_2"
