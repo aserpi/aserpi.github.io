@@ -4,6 +4,7 @@ import { Route, Routes } from 'react-router-dom';
 import { theme } from './theme';
 import { Footer } from './components/Footer';
 import { Navbar } from './components/Navbar';
+import { Courses } from './pages/Courses';
 import { Home } from './pages/Home';
 import { NotFound } from './pages/NotFound';
 import { Projects } from './pages/Projects';
@@ -16,6 +17,7 @@ export const App = () => {
         <Box height={20} />
         <Routes>
           <Route element={<Home />} path="/" />
+          <Route element={<Courses />} path="courses" />
           <Route element={<Projects />} path="projects" />
           <Route element={<NotFound />} path="*" />
         </Routes>
