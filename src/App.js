@@ -1,33 +1,22 @@
-import {
-  ChakraProvider,
-  Box,
-  Text,
-  VStack,
-  Code,
-  Grid,
-} from '@chakra-ui/react';
+import { ChakraProvider } from '@chakra-ui/react';
+import { createHashRouter, RouterProvider } from 'react-router-dom';
 
-import { ColorModeSwitcher } from './ColorModeSwitcher';
-import { Footer } from './components/Footer';
-import { Logo } from './Logo';
 import { theme } from './theme';
+import { Footer } from './components/Footer';
+import { Home } from './pages/Home';
+
+const router = createHashRouter([
+  {
+    path: '/',
+    element: <Home />,
+  },
+]);
 
 function App() {
   return (
     <ChakraProvider theme={theme}>
-      <Box textAlign="center" fontSize="xl">
-        <Grid minH="100vh" p={3}>
-          <ColorModeSwitcher justifySelf="flex-end" />
-          <VStack spacing={8}>
-            <Logo h="40vmin" pointerEvents="none" />
-            <Text>
-              <Code fontSize="xl">Work in Progress</Code>
-            </Text>
-          </VStack>
-
-          <Footer />
-        </Grid>
-      </Box>
+      <RouterProvider router={router} />
+      <Footer />
     </ChakraProvider>
   );
 }
