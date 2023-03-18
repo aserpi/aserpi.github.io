@@ -1,7 +1,6 @@
 import { Box, Code, Grid, Text, VStack } from '@chakra-ui/react';
 import { useEffect } from 'react';
 
-import { ColorModeSwitcher } from '../ColorModeSwitcher';
 import { Logo } from '../Logo';
 
 export const Home = () => {
@@ -12,7 +11,6 @@ export const Home = () => {
   return (
     <Box textAlign="center" fontSize="xl">
       <Grid p={3}>
-        <ColorModeSwitcher justifySelf="flex-end" />
         <VStack spacing={8}>
           <Logo h="40vmin" pointerEvents="none" />
           <Text>

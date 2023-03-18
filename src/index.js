@@ -6,6 +6,7 @@ import { App } from './App';
 import reportWebVitals from './reportWebVitals';
 import * as serviceWorker from './serviceWorker';
 import { theme } from './theme';
+import { HashRouter } from 'react-router-dom';
 
 const container = document.getElementById('root');
 const root = ReactDOM.createRoot(container);
@@ -13,7 +14,9 @@ const root = ReactDOM.createRoot(container);
 root.render(
   <StrictMode>
     <ColorModeScript initialColorMode={theme.config.initialColorMode} />
-    <App />
+    <HashRouter>
+      <App />
+    </HashRouter>
   </StrictMode>
 );
 
