@@ -1,6 +1,8 @@
 import { cardAnatomy } from '@chakra-ui/anatomy';
-import { extendTheme } from '@chakra-ui/react';
+import { createMultiStyleConfigHelpers, extendTheme } from '@chakra-ui/react';
 
+const { definePartsStyle, defineMultiStyleConfig } =
+  createMultiStyleConfigHelpers(cardAnatomy.keys);
 export const theme = extendTheme({
   components: {
     Button: {
@@ -13,6 +15,12 @@ export const theme = extendTheme({
         },
       },
     },
+    Card: defineMultiStyleConfig({
+      baseStyle: definePartsStyle({
+        container: { boxShadow: '0 3px 0 var(--chakra-colors-accent)' },
+      }),
+    }),
+    Heading: { baseStyle: { fontWeight: 'semibold' } },
   },
   config: {
     initialColorMode: 'system',
