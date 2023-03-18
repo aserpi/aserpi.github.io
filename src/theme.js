@@ -18,4 +18,7 @@ export const theme = extendTheme({
     initialColorMode: 'system',
     useSystemColorMode: false,
   },
+  semanticTokens: {
+    colors: { accent: { default: 'blue.500', _dark: 'blue.400' } },
+  },
 });
