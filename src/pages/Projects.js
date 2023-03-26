@@ -6,7 +6,7 @@ import { ProjectCard } from '../components/ProjectCard';
 export const Projects = () => {
   const projects = [
     {
-      desc: 'Personal website made made with JavaScript, React, and Chakra UI.',
+      desc: 'Personal website made made with JavaScript, React, and Chakra UI. Built with GitHub actions.',
       category: 'website',
       name: 'Personal website',
       link: '/',
@@ -15,7 +15,10 @@ export const Projects = () => {
       tags: ['githubActions', 'javascript', 'react'],
     },
     {
-      desc: 'Alert action to upload Splunk search results to an Amazon S3 bucket. Developed using the UCC framework.',
+      desc: [
+        'Alert action to upload Splunk search results to an Amazon S3 bucket.',
+        'Developed using the UCC framework and built with GitHub Actions.',
+      ],
       category: 'Splunk add-on',
       name: 'Amazon S3 Uploader for Splunk',
       repo: 'https://github.com/aserpi/TA_amazon_s3_uploader',
@@ -30,7 +33,7 @@ export const Projects = () => {
       tags: ['python', 'splunk'],
     },
     {
-      desc: 'Splunk geolocation lookups with Italian regions and provinces.',
+      desc: 'Splunk geolocation lookups with Italian regions and provinces. Built with GitHub Actions and published to Splunkbase.',
       category: 'Splunk add-on',
       name: 'Italian Geolocation Lookups for Splunk',
       link: 'https://splunkbase.splunk.com/app/6642',
@@ -46,7 +49,10 @@ export const Projects = () => {
       tags: ['python'],
     },
     {
-      desc: 'Private documentation on cyber security topics, tools, standards, and regulations spanning over 20 000 words.',
+      desc: [
+        'Private documentation on cyber security topics, tools, standards, and regulations spanning over 20 000 words.',
+        'The website is built using a self-managed Gitlab runner.',
+      ],
       category: 'website',
       name: 'Cyber security docs',
       link: 'https://docs.aserpi.it',

@@ -29,7 +29,7 @@ export const ProjectCardTag = ({ tag, ...props }) => {
     },
     githubActions: {
       icon: SiGithubactions,
-      name: 'GitHub actions',
+      name: 'GitHub Actions',
     },
     gitlabCicd: {
       icon: FaGitlab,
