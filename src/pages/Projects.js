@@ -33,6 +33,13 @@ export const Projects = () => {
       tags: ['python', 'splunk'],
     },
     {
+      desc: 'This add-on delivers an alert action that generates Simple XML dashboards from search results and optionally schedules their PDF delivery.',
+      category: 'Splunk add-on',
+      name: 'Dashboard Generator for Splunk',
+      repo: 'https://github.com/aserpi/SA-dashboard_generator',
+      tags: ['githubActions', 'python', 'splunk'],
+    },
+    {
       desc: 'Splunk geolocation lookups with Italian regions and provinces. Built with GitHub Actions and published to Splunkbase.',
       category: 'Splunk add-on',
       name: 'Italian Geolocation Lookups for Splunk',
