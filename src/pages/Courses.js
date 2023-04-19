@@ -66,7 +66,6 @@ export const Courses = () => {
       ],
       organization: 'Splunk',
       name: 'Sales Engineer I',
-      prerelease: 'wip',
     },
   ];
 
