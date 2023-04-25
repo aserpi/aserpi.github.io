@@ -6,7 +6,7 @@ import { ProjectCard } from '../components/ProjectCard';
 export const Projects = () => {
   const projects = [
     {
-      desc: 'Personal website made made with JavaScript, React, and Chakra UI. Built with GitHub actions.',
+      desc: 'Personal website made made with React, Vite, and Chakra UI. Built with GitHub Actions and published to GitHub Pages.',
       category: 'website',
       name: 'Personal website',
       link: '/',
