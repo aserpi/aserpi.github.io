@@ -9,6 +9,7 @@ module.exports = {
     'plugin:react/jsx-runtime',
     'prettier',
   ],
+  ignorePatterns: ['.eslintrc.js', 'dist/*'],
   overrides: [],
   parserOptions: {
     ecmaFeatures: { jsx: true },
@@ -17,4 +18,9 @@ module.exports = {
   },
   plugins: ['react'],
   rules: {},
+  settings: {
+    react: {
+      version: 'detect',
+    },
+  },
 };
