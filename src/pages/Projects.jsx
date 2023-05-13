@@ -10,7 +10,6 @@ export const Projects = () => {
       category: 'website',
       name: 'Personal website',
       link: '/',
-      prerelease: 'wip',
       repo: 'https://github.com/aserpi/aserpi.github.io',
       tags: ['githubActions', 'javascript', 'react'],
     },
