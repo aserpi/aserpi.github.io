@@ -35,6 +35,7 @@ export const Projects = () => {
     {
       desc: 'This add-on delivers an alert action that generates Simple XML dashboards from search results and optionally schedules their PDF delivery.',
       category: 'Splunk add-on',
+      link: 'https://splunkbase.splunk.com/app/6868',
       name: 'Dashboard Generator for Splunk',
       repo: 'https://github.com/aserpi/SA-dashboard_generator',
       tags: ['githubActions', 'python', 'splunk'],
