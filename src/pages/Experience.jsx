@@ -38,12 +38,10 @@ export const Experience = () => {
         'Awarded a certificate in recognition of extracurricular research activities (Honours Programme).',
       ],
       date: '2021/01',
-      icon: <SapienzaIcon overflow="visible" />,
-      iconStyle: {
-        boxShadow: 'none',
-        marginLeft: { base: 0, sm: -30.8 },
-        transform: 'scale(2.5)',
-      },
+      icon: (
+        <SapienzaIcon overflow="visible" style={{ transform: 'scale(2.5)' }} />
+      ),
+      iconStyle: { boxShadow: 'none' },
       title: 'Master of Science in Engineering in Computer Science',
     },
     {
@@ -54,12 +52,10 @@ export const Experience = () => {
         'Italian name: Laurea in Ingegneria Informatica e Automatica.',
       ],
       date: '2018/12',
-      icon: <SapienzaIcon overflow="visible" />,
-      iconStyle: {
-        boxShadow: 'none',
-        marginLeft: { base: 0, sm: -30.8 },
-        transform: 'scale(2.5)',
-      },
+      icon: (
+        <SapienzaIcon overflow="visible" style={{ transform: 'scale(2.5)' }} />
+      ),
+      iconStyle: { boxShadow: 'none' },
       title: 'Bachelor of Science in Computer and System Engineering',
     },
   ];
@@ -69,7 +65,7 @@ export const Experience = () => {
   }, []);
 
   return (
-    <VerticalTimeline animate={false} lineColor="var(--chakra-colors-accent)">
+    <VerticalTimeline lineColor="var(--chakra-colors-accent)">
       {experiences.map((experience, idx) => (
         <ExperienceTimelineElement key={idx} {...experience} />
       ))}
