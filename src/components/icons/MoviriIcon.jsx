@@ -4,7 +4,7 @@ export const MoviriIcon = props => {
   return (
     <Icon viewBox="0 0 112 72.8" {...props}>
       <defs>
-        <style>{'.moviri-cls-1 { fill: #0e2c66;'}</style>
+        <style>{'.moviri-cls-1 { fill: #0e2c66; }'}</style>
       </defs>
       <g id="Layer_1-2" data-name="Layer 1">
         <g id="Layer_1-3" data-name="Layer 1">
