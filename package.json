@@ -3,32 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@chakra-ui/anatomy": "^2.1.2",
     "@chakra-ui/react": "^2.5.1",
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^14.4.3",
-    "framer-motion": "^6.5.1",
-    "gh-pages": "^5.0.0",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-icons": "^3.11.0",
+    "react-icons": "^4.9.0",
     "react-router-dom": "^6.9.0",
     "react-vertical-timeline-component": "^3.6.0",
-    "typewriter-effect": "^2.19.0",
-    "web-vitals": "^2.1.4"
+    "typewriter-effect": "^2.19.0"
   },
   "scripts": {
     "start": "vite",
     "build": "vite build",
     "serve": "vite serve",
     "prepare": "husky install"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
   },
   "browserslist": {
     "production": [
@@ -49,7 +39,7 @@
     "eslint-plugin-react": "^7.32.2",
     "husky": "^8.0.3",
     "lint-staged": "^13.1.2",
-    "prettier": "2.8.4",
+    "prettier": "^2.8.4",
     "vite": "^4.3.1",
     "vite-plugin-eslint": "^1.8.1"
   },
