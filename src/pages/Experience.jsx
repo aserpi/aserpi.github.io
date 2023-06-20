@@ -4,12 +4,22 @@ import { VerticalTimeline } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 
 import { ExperienceTimelineElement } from '../components/ExperienceTimelineElement';
-import { LoroPianaIcon } from '../components/icons/LoroPianaIcon';
-import { MoviriIcon } from '../components/icons/MoviriIcon';
-import { SapienzaIcon } from '../components/icons/SapienzaIcon';
+import { LoroPianaIconChakra } from '../components/icons/LoroPianaIcon';
+import { MoviriIconChakra } from '../components/icons/MoviriIcon';
+import { SapienzaIconChakra } from '../components/icons/SapienzaIcon';
 import '../styles/experienceTimelineElement.css';
 
 export const Experience = () => {
+  const iconBackground = useColorModeValue(
+    'var(--chakra-colors-chakra-subtle-bg)',
+    'white'
+  );
+  const sapienzaIcon = (
+    <SapienzaIconChakra
+      overflow="visible"
+      transform={{ base: 'scale(2)', sm: 'scale(2.5)' }}
+    />
+  );
   const experiences = [
     {
       company: 'Loro Piana',
@@ -23,23 +33,12 @@ export const Experience = () => {
         'Contributing to the enforcement of security and privacy by design, including OT and IoT systems.',
       ],
       icon: (
-        <LoroPianaIcon
+        <LoroPianaIconChakra
           overflow="visible"
-          style={{
-            height: 36,
-            width: 36,
-            marginLeft: -18,
-            marginTop: -18,
-          }}
+          transform={{ sm: 'scale(1.5)' }}
         />
       ),
-      iconStyle: {
-        background: useColorModeValue(
-          'var(--chakra-colors-chakra-subtle-bg)',
-          'white'
-        ),
-        boxShadow: 'none',
-      },
+      iconStyle: { background: iconBackground },
       title: 'Cyber Security Specialist',
     },
     {
@@ -52,14 +51,10 @@ export const Experience = () => {
         'Cooperated with L3 analysts in root cause analysis and threat hunting campaigns.',
         'Built a fraud detection platform with cloud-native OSINT capabilities that increased fraudster discovery by 500% and saved over 7000 person-hours a year.',
       ],
-      icon: <MoviriIcon overflow="visible" />,
-      iconStyle: {
-        background: useColorModeValue(
-          'var(--chakra-colors-chakra-subtle-bg)',
-          'white'
-        ),
-        boxShadow: 'none',
-      },
+      icon: (
+        <MoviriIconChakra overflow="visible" transform={{ sm: 'scale(1.3)' }} />
+      ),
+      iconStyle: { background: iconBackground },
       title: 'Cyber Security Consultant',
     },
     {
@@ -70,10 +65,7 @@ export const Experience = () => {
         'Awarded a certificate in recognition of extracurricular research activities (Honours Programme).',
       ],
       date: '2021/01',
-      icon: (
-        <SapienzaIcon overflow="visible" style={{ transform: 'scale(2.5)' }} />
-      ),
-      iconStyle: { boxShadow: 'none' },
+      icon: sapienzaIcon,
       title: 'Master of Science in Engineering in Computer Science',
     },
     {
@@ -84,10 +76,7 @@ export const Experience = () => {
         'Italian name: Laurea in Ingegneria Informatica e Automatica.',
       ],
       date: '2018/12',
-      icon: (
-        <SapienzaIcon overflow="visible" style={{ transform: 'scale(2.5)' }} />
-      ),
-      iconStyle: { boxShadow: 'none' },
+      icon: sapienzaIcon,
       title: 'Bachelor of Science in Computer and System Engineering',
     },
   ];

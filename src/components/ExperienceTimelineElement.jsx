@@ -27,7 +27,16 @@ export const ExperienceTimelineElement = ({
         if (companyUrl !== undefined && companyUrl !== null)
           window.open(companyUrl, '_blank');
       }}
-      iconStyle={iconStyle}
+      iconStyle={{
+        ...{
+          boxShadow: 'none',
+          cursor:
+            companyUrl !== undefined && companyUrl !== null
+              ? 'pointer'
+              : 'default',
+        },
+        ...iconStyle,
+      }}
       {...props}
     >
       <Text
