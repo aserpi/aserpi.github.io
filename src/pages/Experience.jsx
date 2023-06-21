@@ -4,6 +4,7 @@ import { VerticalTimeline } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 
 import { ExperienceTimelineElement } from '../components/ExperienceTimelineElement';
+import { LoroPianaIcon } from '../components/icons/LoroPianaIcon';
 import { MoviriIcon } from '../components/icons/MoviriIcon';
 import { SapienzaIcon } from '../components/icons/SapienzaIcon';
 import '../styles/experienceTimelineElement.css';
@@ -11,9 +12,40 @@ import '../styles/experienceTimelineElement.css';
 export const Experience = () => {
   const experiences = [
     {
+      company: 'Loro Piana',
+      companyUrl:
+        'https://www.lvmh.com/houses/fashion-leather-goods/loro-piana/',
+      date: '2023/07 – present',
+      desc: [
+        'Enhancing the SOC to accelerate the resolution of security incidents and reduce false positives.',
+        'Overseeing penetration testing and remediation activities.',
+        'Collaborating with auditors and coordinating outsourced projects for the implementation/enhancement of cyber security services.',
+        'Contributing to the enforcement of security and privacy by design, including OT and IoT systems.',
+      ],
+      icon: (
+        <LoroPianaIcon
+          overflow="visible"
+          style={{
+            height: 36,
+            width: 36,
+            marginLeft: -18,
+            marginTop: -18,
+          }}
+        />
+      ),
+      iconStyle: {
+        background: useColorModeValue(
+          'var(--chakra-colors-chakra-subtle-bg)',
+          'white'
+        ),
+        boxShadow: 'none',
+      },
+      title: 'Cyber Security Specialist',
+    },
+    {
       company: 'Moviri',
       companyUrl: 'https://www.moviri.com/cybersecurity',
-      date: '2021/04 – present',
+      date: '2021/04 – 2023/07',
       desc: [
         'Designed and administered fault-tolerant SIEM/SOAR solutions with custom integrations and data source monitoring, providing full visibility into on-premises and cloud environments.',
         'Contributed to the definition and automation of response policies to security incidents, increasing alert precision by 36% and halving investigation times.',
