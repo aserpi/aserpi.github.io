@@ -19,6 +19,7 @@ export const Projects = () => {
         'Developed using the UCC framework and built with GitHub Actions.',
       ],
       category: 'Splunk add-on',
+      link: 'https://splunkbase.splunk.com/app/6958/',
       name: 'Amazon S3 Uploader for Splunk',
       repo: 'https://github.com/aserpi/TA_amazon_s3_uploader',
       tags: ['aws', 'githubActions', 'python', 'splunk'],
