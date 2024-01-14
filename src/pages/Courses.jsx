@@ -7,6 +7,16 @@ export const Courses = () => {
   const courses = [
     {
       desc: [
+        'This course provides IT Security Professionals with the knowledge and skills needed to implement security controls, maintain an organization’s security posture, and identify and remediate security vulnerabilities in Microsoft Azure.',
+        'This course includes security for identity and access, platform protection, data and applications, and security operations.',
+      ],
+      link: 'https://learn.microsoft.com/en-us/credentials/certifications/azure-security-engineer/',
+      name: 'Azure Security Engineer Associate (AZ-500)',
+      organization: 'Microsoft',
+      prerelease: 'wip',
+    },
+    {
+      desc: [
         'This course is an engaging self-paced video training solution that provides learners with more than 23 hours of personal training from security expert Sari Greene.',
         'Through the use of topic-focused instructional videos, learners gain an in-depth understanding of each objective in the CompTIA Security+ (SY0-601) exam, as well as a deeper understanding of security foundations and principles to ensure exam success.',
       ],
