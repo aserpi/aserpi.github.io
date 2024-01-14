@@ -25,7 +25,7 @@ export const Certifications = () => {
       organization: 'Splunk',
     },
     {
-      expires: '2024-01-23',
+      expires: '2025-01-24',
       firstEarned: '2023-01-23',
       image: sc_200,
       link: 'https://www.credly.com/badges/e69cd7f7-321a-45a8-b4b9-c07b941c3c6d/public_url',
