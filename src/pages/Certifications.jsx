@@ -119,7 +119,13 @@ export const Certifications = () => {
       {certifications.map(certification => {
         const desc = [`First earned on ${certification.firstEarned}.`];
         if (typeof certification.expires === 'string') {
-          desc.push(` Expires on ${certification.expires}.`);
+          desc.push(
+            ` Expire${
+              certification.expires < new Date().toISOString().split('T')[0]
+                ? 'd'
+                : 's'
+            } on ${certification.expires}.`
+          );
         }
 
         return (
