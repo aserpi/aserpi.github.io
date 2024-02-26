@@ -13,7 +13,6 @@ export const Courses = () => {
       link: 'https://learn.microsoft.com/en-us/credentials/certifications/azure-security-engineer/',
       name: 'Azure Security Engineer Associate (AZ-500)',
       organization: 'Microsoft',
-      prerelease: 'wip',
     },
     {
       desc: [
