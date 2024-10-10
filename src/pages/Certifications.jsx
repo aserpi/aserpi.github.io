@@ -13,9 +13,18 @@ import splk_1001 from '../images/splk-1001.png';
 import splk_1002 from '../images/splk-1002.png';
 import splk_1003 from '../images/splk-1003.png';
 import splk_5001 from '../images/splk-5001.png';
+import splk_5002 from '../images/splk-5002.png';
 
 export const Certifications = () => {
   const certifications = [
+    {
+      expires: '2027-09-07',
+      firstEarned: '2024-09-07',
+      image: splk_5002,
+      link: 'https://www.credly.com/badges/e331be9b-9dad-42a4-ac7c-f96c41206513/public_url',
+      name: 'Splunk Certified Cybersecurity Defense Engineer',
+      organization: 'Splunk',
+    },
     {
       expires: '2026-09-18',
       firstEarned: '2023-09-18',
