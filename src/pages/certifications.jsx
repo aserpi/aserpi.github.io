@@ -1,7 +1,7 @@
 import { Flex } from '@chakra-ui/react';
 import { useEffect } from 'react';
 
-import { ProjectCard } from '@/components/project-card';
+import { ShowcaseCard } from '@/components/showcase-card';
 import ccoe_admin from '@/images/ccoe-admin.webp';
 import ccoe_user from '@/images/ccoe-user.webp';
 import ccta from '@/images/ccta.webp';
@@ -137,7 +137,7 @@ export const Certifications = () => {
         }
 
         return (
-          <ProjectCard
+          <ShowcaseCard
             category={certification.organization}
             description={desc}
             image={certification.image}

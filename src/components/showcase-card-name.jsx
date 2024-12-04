@@ -5,7 +5,7 @@ import { useColorModeValue } from '@/components/ui/color-mode';
 import { Tag } from '@/components/ui/tag';
 import { GhostLink } from '@/components/ghost-link';
 
-export const ProjectCardName = ({ link, name, tag, ...props }) => {
+export const ShowcaseCardName = ({ link, name, tag, ...props }) => {
   const tagVariant = useColorModeValue('outline', 'subtle');
 
   return (
@@ -31,7 +31,7 @@ export const ProjectCardName = ({ link, name, tag, ...props }) => {
   );
 };
 
-ProjectCardName.propTypes = {
+ShowcaseCardName.propTypes = {
   link: PropTypes.string,
   name: PropTypes.string.isRequired,
   tag: PropTypes.string,

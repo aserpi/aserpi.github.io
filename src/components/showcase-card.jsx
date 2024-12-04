@@ -2,11 +2,11 @@ import { Box, Card, HStack, Flex, Image, Text } from '@chakra-ui/react';
 import PropTypes from 'prop-types';
 
 import { GhostLink } from '@/components/ghost-link';
-import { ProjectCardName } from '@/components/project-card-name';
-import { ProjectCardTag } from '@/components/project-card-tag';
 import { RepoIconButton } from '@/components/repo-icon-button';
+import { ShowcaseCardName } from '@/components/showcase-card-name';
+import { ShowcaseCardTag } from '@/components/showcase-card-tag';
 
-export const ProjectCard = ({
+export const ShowcaseCard = ({
   category,
   description,
   headingTag,
@@ -53,7 +53,7 @@ export const ProjectCard = ({
               <RepoIconButton link={repo} marginLeft={-1.5} title={title} />
             ) : null}
           </Flex>
-          <ProjectCardName
+          <ShowcaseCardName
             link={link}
             marginBottom={2}
             name={title}
@@ -72,7 +72,7 @@ export const ProjectCard = ({
         <Card.Footer paddingTop={0}>
           <HStack wrap="wrap">
             {tags.map(tag => (
-              <ProjectCardTag key={tag} tag={tag} />
+              <ShowcaseCardTag key={tag} tag={tag} />
             ))}
           </HStack>
         </Card.Footer>
@@ -81,7 +81,7 @@ export const ProjectCard = ({
   );
 };
 
-ProjectCard.propTypes = {
+ShowcaseCard.propTypes = {
   category: PropTypes.string.isRequired,
   description: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.string),

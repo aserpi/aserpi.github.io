@@ -1,7 +1,7 @@
 import { Flex } from '@chakra-ui/react';
 import { useEffect } from 'react';
 
-import { ProjectCard } from '@/components/project-card';
+import { ShowcaseCard } from '@/components/showcase-card';
 
 export const Projects = () => {
   const projects = [
@@ -83,7 +83,7 @@ export const Projects = () => {
       maxWidth={1280}
     >
       {projects.map(project => (
-        <ProjectCard
+        <ShowcaseCard
           category={project.category}
           description={project.desc}
           headingTag={project.prerelease}

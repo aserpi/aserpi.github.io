@@ -13,7 +13,7 @@ import { SplunkIcon } from '@/components/icons/splunk-icon';
 import { useColorModeValue } from '@/components/ui/color-mode';
 import { Tag } from '@/components/ui/tag';
 
-export const ProjectCardTag = ({ tag, ...props }) => {
+export const ShowcaseCardTag = ({ tag, ...props }) => {
   const tagFormats = {
     aws: {
       icon: FaAws,
@@ -68,4 +68,4 @@ export const ProjectCardTag = ({ tag, ...props }) => {
   );
 };
 
-ProjectCardTag.propTypes = { tag: PropTypes.string.isRequired };
+ShowcaseCardTag.propTypes = { tag: PropTypes.string.isRequired };
