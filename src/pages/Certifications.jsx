@@ -26,7 +26,6 @@ export const Certifications = () => {
       organization: 'Splunk',
     },
     {
-      expires: '2026-09-18',
       firstEarned: '2023-09-18',
       image: splk_5001,
       link: 'https://www.credly.com/badges/820450ba-6790-4803-abe1-5f2fe119a20b/public_url',
