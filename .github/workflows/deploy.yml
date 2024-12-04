@@ -33,6 +33,8 @@ jobs:
           cache: 'npm'
       - name: Install dependencies
         run: npm install
+      - name: Fix old 'globals' compatibility with 'eslint' # Waiting for all packages to support 'globals' v13.12.1
+        run: cat node_modules/globals/globals.json | sed 's/"AudioWorkletGlobalScope "/"AudioWorkletGlobalScope"/g' > /tmp/globals_new && mv /tmp/globals_new node_modules/globals/globals.json
       - name: Build
         run: npm run build
       - name: Setup Pages
