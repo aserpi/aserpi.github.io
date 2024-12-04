@@ -4,14 +4,13 @@ import {
   Grid,
   GridItem,
   Group,
-  IconButton,
   Image,
   Text,
 } from '@chakra-ui/react';
 import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa';
 
 import { ColoredSeparator } from '@/components/colored-separator';
-import { GhostLink } from '@/components/ghost-link';
+import { SocialButton } from '@/components/social-button';
 import { TextLogo } from '@/components/text-logo';
 import logo from '@/images/logo.svg';
 
@@ -59,9 +58,8 @@ export const Footer = () => {
         rowStart={{ base: 3, md: 2 }}
       >
         <Group marginRight={{ base: 0, md: 2 }} variant="ghostLight">
-          <IconButton
+          <SocialButton
             aria-label="Email"
-            as={GhostLink}
             onClick={() => {
               const handle = 'aserpi';
               const scheme = 'otliam';
@@ -71,40 +69,23 @@ export const Footer = () => {
                 .reverse()
                 .join('')}:${handle}@${handle}.${tld}`;
             }}
-            variant="ghostLight"
-            _hover={{
-              transform: 'scale(1.2)',
-              transition: 'transform .2s',
-            }}
           >
-            <FaEnvelope fontSize="1.25rem" />
-          </IconButton>
-          <IconButton
+            <FaEnvelope />
+          </SocialButton>
+          <SocialButton
             aria-label="LinkedIn"
-            as={GhostLink}
             href="https://linkedin.com/in/alessandro-serpi"
             target="_blank"
-            variant="ghostLight"
-            _hover={{
-              transform: 'scale(1.2)',
-              transition: 'transform .2s',
-            }}
           >
-            <FaLinkedin fontSize="1.25rem" />
-          </IconButton>
-          <IconButton
+            <FaLinkedin />
+          </SocialButton>
+          <SocialButton
             aria-label="GitHub"
-            as={GhostLink}
             href="https://github.com/aserpi"
             target="_blank"
-            variant="ghostLight"
-            _hover={{
-              transform: 'scale(1.2)',
-              transition: 'transform .2s',
-            }}
           >
-            <FaGithub fontSize="1.25rem" />
-          </IconButton>
+            <FaGithub />
+          </SocialButton>
         </Group>
       </GridItem>
       <GridItem
