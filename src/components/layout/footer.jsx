@@ -9,9 +9,9 @@ import {
 } from '@chakra-ui/react';
 import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa';
 
-import { ColoredSeparator } from '@/components/colored-separator';
-import { SocialButton } from '@/components/social-button';
-import { TextLogo } from '@/components/text-logo';
+import { ColoredSeparator } from '@/components/layout';
+import { TextLogo } from '@/components/logos';
+import { SocialButton } from '@/components/user-interaction';
 import logo from '@/images/logo.svg';
 
 export const Footer = () => {

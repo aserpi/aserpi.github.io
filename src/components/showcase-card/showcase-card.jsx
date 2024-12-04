@@ -1,10 +1,9 @@
 import { Box, Card, HStack, Flex, Image, Text } from '@chakra-ui/react';
 import PropTypes from 'prop-types';
 
-import { GhostLink } from '@/components/ghost-link';
-import { RepoIconButton } from '@/components/repo-icon-button';
-import { ShowcaseCardName } from '@/components/showcase-card-name';
-import { ShowcaseCardTag } from '@/components/showcase-card-tag';
+import { ShowcaseCardName } from '@/components/showcase-card/showcase-card-name';
+import { ShowcaseCardTag } from '@/components/showcase-card/showcase-card-tag';
+import { GhostLink, RepoIconButton } from '@/components/user-interaction';
 
 export const ShowcaseCard = ({
   category,

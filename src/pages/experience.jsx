@@ -2,11 +2,9 @@ import { useEffect } from 'react';
 import { VerticalTimeline } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 
-import { LoroPianaIconChakra } from '@/components/icons/loro-piana-icon';
-import { MoviriIconChakra } from '@/components/icons/moviri-icon';
-import { SapienzaIconChakra } from '@/components/icons/sapienza-icon';
-import { useColorModeValue } from '@/components/ui/color-mode';
-import { ExperienceTimelineElement } from '@/components/experience-timeline-element';
+import { LoroPianaIcon, MoviriIcon, SapienzaIcon } from '@/components/icons';
+import { ExperienceTimelineElement } from '@/components/timeline';
+import { useColorModeValue } from '@/components/user-interaction';
 
 export const Experience = () => {
   const iconBackground = useColorModeValue(
@@ -14,7 +12,7 @@ export const Experience = () => {
     'white'
   );
   const sapienzaIcon = (
-    <SapienzaIconChakra
+    <SapienzaIcon
       overflow="visible"
       transform={{ base: 'scale(2)', sm: 'scale(2.5)' }}
     />
@@ -32,10 +30,7 @@ export const Experience = () => {
         'Contributing to the enforcement of security and privacy by design, including OT and IoT systems.',
       ],
       icon: (
-        <LoroPianaIconChakra
-          overflow="visible"
-          transform={{ sm: 'scale(1.5)' }}
-        />
+        <LoroPianaIcon overflow="visible" transform={{ sm: 'scale(1.5)' }} />
       ),
       iconStyle: { background: iconBackground },
       title: 'Cyber Security Specialist',
@@ -50,9 +45,7 @@ export const Experience = () => {
         'Cooperated with L3 analysts in root cause analysis and threat hunting campaigns.',
         'Built a fraud detection platform with cloud-native OSINT capabilities that increased fraudster discovery by 500% and saved over 7000 person-hours a year.',
       ],
-      icon: (
-        <MoviriIconChakra overflow="visible" transform={{ sm: 'scale(1.3)' }} />
-      ),
+      icon: <MoviriIcon overflow="visible" transform={{ sm: 'scale(1.3)' }} />,
       iconStyle: { background: iconBackground },
       title: 'Cyber Security Consultant',
     },

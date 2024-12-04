@@ -10,16 +10,16 @@ import { useEffect, useRef, useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { Link, NavLink } from 'react-router-dom';
 
-import { ColorModeButton } from '@/components/ui/color-mode';
 import {
+  ColoredSeparator,
   DrawerActionTrigger,
   DrawerBackdrop,
   DrawerBody,
   DrawerContent,
   DrawerRoot,
   DrawerTrigger,
-} from '@/components/ui/drawer';
-import { ColoredSeparator } from '@/components/colored-separator';
+} from '@/components/layout';
+import { ColorModeButton } from '@/components/user-interaction';
 import logo from '@/images/logo.svg';
 
 export const Navbar = () => {

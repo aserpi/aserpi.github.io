@@ -1,6 +1,6 @@
 import { IconButton } from '@chakra-ui/react';
 
-import { GhostLink } from '@/components/ghost-link';
+import { GhostLink } from '@/components/user-interaction';
 
 export const SocialButton = props => {
   return (

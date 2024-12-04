@@ -2,7 +2,7 @@ import { IconButton } from '@chakra-ui/react';
 import { FaGitAlt, FaGithub, FaGitlab } from 'react-icons/fa';
 import PropTypes from 'prop-types';
 
-import { GhostLink } from './ghost-link';
+import { GhostLink } from '@/components/user-interaction';
 
 export const RepoIconButton = ({ link, title, ...props }) => (
   <IconButton

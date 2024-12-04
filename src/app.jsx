@@ -1,9 +1,9 @@
 import { Box, ChakraProvider, Flex, Spacer } from '@chakra-ui/react';
 import { Route, Routes } from 'react-router-dom';
 
-import { ColorModeProvider } from '@/components/ui/color-mode';
-import { Footer } from '@/components/footer';
-import { Navbar } from '@/components/navbar';
+import { Footer } from '@/components/layout/footer';
+import { Navbar } from '@/components/layout/navbar';
+import { ColorModeProvider } from '@/components/user-interaction/color-mode';
 import { Certifications } from '@/pages/certifications';
 import { Courses } from '@/pages/courses';
 import { Experience } from '@/pages/experience';

@@ -2,7 +2,7 @@ import { Heading, Text } from '@chakra-ui/react';
 import PropTypes from 'prop-types';
 import { VerticalTimelineElement } from 'react-vertical-timeline-component';
 
-import { GhostLink } from '@/components/ghost-link';
+import { GhostLink } from '@/components/user-interaction';
 
 export const ExperienceTimelineElement = ({
   company,

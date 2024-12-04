@@ -1,9 +1,8 @@
 import { Flex, Heading } from '@chakra-ui/react';
 import PropTypes from 'prop-types';
 
-import { useColorModeValue } from '@/components/ui/color-mode';
-import { Tag } from '@/components/ui/tag';
-import { GhostLink } from '@/components/ghost-link';
+import { Tag } from '@/components/layout';
+import { GhostLink, useColorModeValue } from '@/components/user-interaction';
 
 export const ShowcaseCardName = ({ link, name, tag, ...props }) => {
   const tagVariant = useColorModeValue('outline', 'subtle');

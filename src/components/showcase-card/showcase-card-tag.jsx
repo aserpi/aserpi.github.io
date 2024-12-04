@@ -9,9 +9,9 @@ import {
 } from 'react-icons/fa';
 import { SiGithubactions } from 'react-icons/si';
 
-import { SplunkIcon } from '@/components/icons/splunk-icon';
-import { useColorModeValue } from '@/components/ui/color-mode';
-import { Tag } from '@/components/ui/tag';
+import { SplunkIcon } from '@/components/icons';
+import { Tag } from '@/components/layout';
+import { useColorModeValue } from '@/components/user-interaction';
 
 export const ShowcaseCardTag = ({ tag, ...props }) => {
   const tagFormats = {
