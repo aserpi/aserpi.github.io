@@ -1,4 +1,3 @@
-import { useColorModeValue } from '@chakra-ui/react';
 import { useEffect } from 'react';
 import { VerticalTimeline } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
@@ -7,11 +6,11 @@ import { ExperienceTimelineElement } from '../components/ExperienceTimelineEleme
 import { LoroPianaIconChakra } from '../components/icons/LoroPianaIcon';
 import { MoviriIconChakra } from '../components/icons/MoviriIcon';
 import { SapienzaIconChakra } from '../components/icons/SapienzaIcon';
-import '../styles/experienceTimelineElement.css';
+import { useColorModeValue } from '../components/ui/color-mode';
 
 export const Experience = () => {
   const iconBackground = useColorModeValue(
-    'var(--chakra-colors-chakra-subtle-bg)',
+    'var(--chakra-colors-bg-card)',
     'white'
   );
   const sapienzaIcon = (

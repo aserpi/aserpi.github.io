@@ -1,10 +1,5 @@
-import {
-  Tag,
-  TagLabel,
-  TagLeftIcon,
-  useColorModeValue,
-} from '@chakra-ui/react';
 import PropTypes from 'prop-types';
+import { IconContext } from 'react-icons';
 import {
   FaAws,
   FaDocker,
@@ -16,6 +11,8 @@ import {
 import { SiGithubactions } from 'react-icons/si';
 
 import { SplunkIcon } from './icons/SplunkIcon';
+import { useColorModeValue } from './ui/color-mode';
+import { Tag } from './ui/tag';
 
 export const ProjectCardTag = ({ tag, ...props }) => {
   const tagFormats = {
@@ -57,9 +54,17 @@ export const ProjectCardTag = ({ tag, ...props }) => {
 
   const formattedTag = tagFormats[tag];
   return (
-    <Tag key={tag} variant={variant} {...props}>
-      <TagLeftIcon as={formattedTag.icon} />
-      <TagLabel>{formattedTag.name}</TagLabel>
+    <Tag
+      bg="bg.tag"
+      boxShadow="tag"
+      key={tag}
+      size="lg"
+      startElement={formattedTag.icon({ display: 'block' })}
+      elementSize="sm"
+      variant={variant}
+      {...props}
+    >
+      {formattedTag.name}
     </Tag>
   );
 };

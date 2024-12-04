@@ -1,25 +1,27 @@
-import { IconButton, Link } from '@chakra-ui/react';
+import { IconButton } from '@chakra-ui/react';
 import { FaGitAlt, FaGithub, FaGitlab } from 'react-icons/fa';
 import PropTypes from 'prop-types';
+
+import { GhostLink } from './GhostLink.js';
 
 export const RepoIconButton = ({ link, title, ...props }) => (
   <IconButton
     aria-label={`Repository link for ${title}`}
-    as={Link}
+    as={GhostLink}
     href={link}
-    icon={
-      link.startsWith('https://github') ? (
-        <FaGithub />
-      ) : link.startsWith('https://gitlab') ? (
-        <FaGitlab />
-      ) : (
-        <FaGitAlt />
-      )
-    }
+    size="xs"
     target="_blank"
     variant="ghostLight"
     {...props}
-  />
+  >
+    {link.startsWith('https://github') ? (
+      <FaGithub />
+    ) : link.startsWith('https://gitlab') ? (
+      <FaGitlab />
+    ) : (
+      <FaGitAlt />
+    )}
+  </IconButton>
 );
 
 RepoIconButton.propTypes = {

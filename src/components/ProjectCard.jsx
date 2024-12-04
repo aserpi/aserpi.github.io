@@ -1,16 +1,7 @@
-import {
-  Box,
-  Card,
-  CardBody,
-  CardFooter,
-  Flex,
-  Image,
-  Link,
-  Text,
-  Wrap,
-} from '@chakra-ui/react';
+import { Box, Card, HStack, Flex, Image, Text } from '@chakra-ui/react';
 import PropTypes from 'prop-types';
 
+import { GhostLink } from './GhostLink.js';
 import { ProjectCardTag } from './ProjectCardTag';
 import { ProjectCardName } from './ProjectCardName';
 import { RepoIconButton } from './RepoIconButton';
@@ -27,11 +18,18 @@ export const ProjectCard = ({
   ...props
 }) => {
   return (
-    <Card variant="filled" {...props}>
-      <CardBody>
+    <Card.Root
+      css={{ '--card-padding': 'spacing.5' }}
+      bg="bg.card"
+      boxShadow="accent"
+      size="lg"
+      variant="subtle"
+      {...props}
+    >
+      <Card.Body>
         <Box>
           {image !== undefined && image !== null ? (
-            <Link
+            <GhostLink
               float={{ md: 'left' }}
               display={{ base: 'table', md: 'unset' }}
               href={link}
@@ -44,10 +42,10 @@ export const ProjectCard = ({
                 marginBottom={{ base: 2, md: 0 }}
                 src={image}
               />
-            </Link>
+            </GhostLink>
           ) : null}
           <Flex alignItems="center" gap={1}>
-            <Text casing="uppercase" fontSize="sm">
+            <Text fontSize="sm" textTransform="uppercase">
               {category}
             </Text>
 
@@ -69,17 +67,17 @@ export const ProjectCard = ({
             ))
           )}
         </Box>
-      </CardBody>
+      </Card.Body>
       {Array.isArray(tags) && tags.length > 0 ? (
-        <CardFooter paddingTop={0}>
-          <Wrap>
+        <Card.Footer paddingTop={0}>
+          <HStack wrap="wrap">
             {tags.map(tag => (
               <ProjectCardTag key={tag} tag={tag} />
             ))}
-          </Wrap>
-        </CardFooter>
+          </HStack>
+        </Card.Footer>
       ) : null}
-    </Card>
+    </Card.Root>
   );
 };
 

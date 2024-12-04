@@ -1,6 +1,8 @@
 import { VerticalTimelineElement } from 'react-vertical-timeline-component';
-import { Heading, Link, Text } from '@chakra-ui/react';
+import { Heading, Text } from '@chakra-ui/react';
 import PropTypes from 'prop-types';
+
+import { GhostLink } from './GhostLink.js';
 
 export const ExperienceTimelineElement = ({
   company,
@@ -15,11 +17,11 @@ export const ExperienceTimelineElement = ({
   return (
     <VerticalTimelineElement
       contentStyle={{
-        background: 'var(--chakra-colors-chakra-subtle-bg)',
-        boxShadow: '0 3px 0 var(--chakra-colors-accent)',
+        background: 'var(--chakra-colors-bg-card)',
+        boxShadow: 'var(--chakra-shadows-accent)',
       }}
       contentArrowStyle={{
-        borderRightColor: 'var(--chakra-colors-chakra-subtle-bg)',
+        borderRightColor: 'var(--chakra-colors-bg-card)',
       }}
       date={date}
       icon={icon}
@@ -40,15 +42,15 @@ export const ExperienceTimelineElement = ({
       {...props}
     >
       <Text
-        as={Link}
-        casing="uppercase"
+        as={GhostLink}
         fontSize="sm"
         href={companyUrl}
         target="_blank"
+        textTransform="uppercase"
       >
         {company}
       </Text>
-      <Heading color="accent !important" marginTop={2} size="md">
+      <Heading color="accent !important" marginTop={2} size="xl">
         {title}
       </Heading>
       {desc.map((paragraph, idx) => (

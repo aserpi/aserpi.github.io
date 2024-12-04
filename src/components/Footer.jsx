@@ -1,18 +1,18 @@
 import {
   Box,
-  ButtonGroup,
-  Divider,
   Flex,
   Grid,
   GridItem,
+  Group,
   IconButton,
   Image,
-  Link,
   Text,
 } from '@chakra-ui/react';
 import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa';
 
 import logo from '../images/logo.svg';
+import { ColoredSeparator } from './ColoredSeparator.js';
+import { GhostLink } from './GhostLink';
 import { TextLogo } from './TextLogo';
 
 export const Footer = () => {
@@ -35,7 +35,7 @@ export const Footer = () => {
         marginBottom={{ base: 4, md: 0 }}
         rowStart={1}
       >
-        <Divider />
+        <ColoredSeparator />
       </GridItem>
       <GridItem
         alignItems="center"
@@ -58,10 +58,10 @@ export const Footer = () => {
         justifyContent={{ base: 'center', md: 'right' }}
         rowStart={{ base: 3, md: 2 }}
       >
-        <ButtonGroup marginRight={{ base: 0, md: 2 }} variant="ghostLight">
+        <Group marginRight={{ base: 0, md: 2 }} variant="ghostLight">
           <IconButton
-            aria-label={'Email'}
-            icon={<FaEnvelope fontSize="1.25rem" />}
+            aria-label="Email"
+            as={GhostLink}
             onClick={() => {
               const handle = 'aserpi';
               const scheme = 'otliam';
@@ -71,22 +71,41 @@ export const Footer = () => {
                 .reverse()
                 .join('')}:${handle}@${handle}.${tld}`;
             }}
-          />
+            variant="ghostLight"
+            _hover={{
+              transform: 'scale(1.2)',
+              transition: 'transform .2s',
+            }}
+          >
+            <FaEnvelope fontSize="1.25rem" />
+          </IconButton>
           <IconButton
             aria-label="LinkedIn"
-            as={Link}
+            as={GhostLink}
             href="https://linkedin.com/in/alessandro-serpi"
-            icon={<FaLinkedin fontSize="1.25rem" />}
             target="_blank"
-          />
+            variant="ghostLight"
+            _hover={{
+              transform: 'scale(1.2)',
+              transition: 'transform .2s',
+            }}
+          >
+            <FaLinkedin fontSize="1.25rem" />
+          </IconButton>
           <IconButton
             aria-label="GitHub"
-            as={Link}
+            as={GhostLink}
             href="https://github.com/aserpi"
-            icon={<FaGithub fontSize="1.25rem" />}
             target="_blank"
-          />
-        </ButtonGroup>
+            variant="ghostLight"
+            _hover={{
+              transform: 'scale(1.2)',
+              transition: 'transform .2s',
+            }}
+          >
+            <FaGithub fontSize="1.25rem" />
+          </IconButton>
+        </Group>
       </GridItem>
       <GridItem
         alignItems="center"

@@ -1,16 +1,25 @@
-import { Tooltip, useColorMode } from '@chakra-ui/react';
+import { useId } from 'react';
+import { useColorMode } from './ui/color-mode';
+import { Tooltip } from './ui/tooltip';
 
 export const TextLogo = props => {
   const { colorMode } = useColorMode();
   const fill = colorMode === 'light' ? '#000' : '#FFF';
+  const id = useId();
 
   return (
     <Tooltip
-      label="Raginy font by Artefact Project"
+      closeDelay={100}
+      content="Raginy font by Artefact Project"
+      ids={{ trigger: id }}
+      interactive
+      openDelay={0}
+      positioning={{ placement: 'top' }}
+      showArrow
       aria-label="Raginy font by Artefact Project"
     >
       <svg
-        id="Layer_2"
+        id={id}
         data-name="Layer 2"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 255.1 79.64"

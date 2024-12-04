@@ -1,30 +1,30 @@
-import {
-  Flex,
-  Heading,
-  Link,
-  Tag,
-  Text,
-  useColorModeValue,
-} from '@chakra-ui/react';
+import { Flex, Heading } from '@chakra-ui/react';
 import PropTypes from 'prop-types';
+
+import { GhostLink } from './GhostLink.js';
+import { useColorModeValue } from './ui/color-mode';
+import { Tag } from './ui/tag';
 
 export const ProjectCardName = ({ link, name, tag, ...props }) => {
   const tagVariant = useColorModeValue('outline', 'subtle');
 
   return (
-    <Flex direction="row" gap={2} {...props}>
+    <Flex align="self-end" direction="row" gap={2} {...props}>
       {link !== undefined && link !== null ? (
-        <Heading as={Link} color="accent" href={link} size="md" target="_blank">
+        <Heading as={GhostLink} color="accent" href={link} target="_blank">
           {name}
         </Heading>
       ) : (
-        <Heading color="accent" size="md">
-          {name}
-        </Heading>
+        <Heading color="accent">{name}</Heading>
       )}
       {tag ? (
-        <Tag variant={tagVariant}>
-          <Text casing="uppercase">{tag}</Text>
+        <Tag
+          bg="gray.200/16"
+          boxShadow={{ _light: 'inset 0 0 0px 1px var(--chakra-colors-fg)' }}
+          textTransform="uppercase"
+          variant={tagVariant}
+        >
+          {tag}
         </Tag>
       ) : null}
     </Flex>

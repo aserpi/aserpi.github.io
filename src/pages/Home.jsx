@@ -31,17 +31,17 @@ export const Home = () => {
           justifyContent="center"
           textAlign={{ base: 'center', md: 'inherit' }}
         >
-          <Heading size="lg">Welcome! I&apos;m</Heading>
-          <Heading size="2xl">Alessandro Serpi,</Heading>
-          <Heading marginTop={1} size="lg">
+          <Heading size={{ base: '2xl', md: '3xl' }}>Welcome! I&apos;m</Heading>
+          <Heading size={{ base: '4xl', md: '5xl' }}>Alessandro Serpi,</Heading>
+          <Heading marginTop={1} size={{ base: '2xl', md: '3xl' }}>
             <Typewriter
               onInit={typewriter => {
                 typewriter.rewrite = (str, deleteChars) => {
                   deleteChars = !Number.isInteger(deleteChars)
                     ? str.length
                     : deleteChars >= 0
-                    ? deleteChars
-                    : str.length + deleteChars;
+                      ? deleteChars
+                      : str.length + deleteChars;
 
                   return typewriter
                     .typeString(str)
