@@ -1,10 +1,10 @@
 import { Box, Card, HStack, Flex, Image, Text } from '@chakra-ui/react';
 import PropTypes from 'prop-types';
 
-import { GhostLink } from './GhostLink.js';
-import { ProjectCardTag } from './ProjectCardTag';
-import { ProjectCardName } from './ProjectCardName';
-import { RepoIconButton } from './RepoIconButton';
+import { GhostLink } from '@/components/ghost-link';
+import { ProjectCardName } from '@/components/project-card-name';
+import { ProjectCardTag } from '@/components/project-card-tag';
+import { RepoIconButton } from '@/components/repo-icon-button';
 
 export const ProjectCard = ({
   category,

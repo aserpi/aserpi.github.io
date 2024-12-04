@@ -1,19 +1,19 @@
 import { Flex } from '@chakra-ui/react';
 import { useEffect } from 'react';
 
-import { ProjectCard } from '../components/ProjectCard';
-import ccoe_admin from '../images/ccoe_admin.webp';
-import ccoe_user from '../images/ccoe_user.webp';
-import ccta from '../images/ccta.webp';
-import ccth from '../images/ccth.webp';
-import sc_200 from '../images/sc-200.webp';
-import sc_900 from '../images/sc-900.webp';
-import splk_acc_dev from '../images/splk-acc-dev.webp';
-import splk_1001 from '../images/splk-1001.webp';
-import splk_1002 from '../images/splk-1002.webp';
-import splk_1003 from '../images/splk-1003.webp';
-import splk_5001 from '../images/splk-5001.webp';
-import splk_5002 from '../images/splk-5002.webp';
+import { ProjectCard } from '@/components/project-card';
+import ccoe_admin from '@/images/ccoe-admin.webp';
+import ccoe_user from '@/images/ccoe-user.webp';
+import ccta from '@/images/ccta.webp';
+import ccth from '@/images/ccth.webp';
+import sc_200 from '@/images/sc-200.webp';
+import sc_900 from '@/images/sc-900.webp';
+import splk_acc_dev from '@/images/splk-acc-dev.webp';
+import splk_1001 from '@/images/splk-1001.webp';
+import splk_1002 from '@/images/splk-1002.webp';
+import splk_1003 from '@/images/splk-1003.webp';
+import splk_5001 from '@/images/splk-5001.webp';
+import splk_5002 from '@/images/splk-5002.webp';
 
 export const Certifications = () => {
   const certifications = [

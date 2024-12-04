@@ -1,6 +1,7 @@
 import { useId } from 'react';
-import { useColorMode } from './ui/color-mode';
-import { Tooltip } from './ui/tooltip';
+
+import { useColorMode } from '@/components/ui/color-mode';
+import { Tooltip } from '@/components/ui/tooltip';
 
 export const TextLogo = props => {
   const { colorMode } = useColorMode();

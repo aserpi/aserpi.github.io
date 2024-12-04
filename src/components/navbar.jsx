@@ -6,13 +6,10 @@ import {
   Spacer,
   Text,
 } from '@chakra-ui/react';
-import { Link, NavLink } from 'react-router-dom';
-
-import logo from '../images/logo.svg';
-import { ColorModeSwitcher } from './ColorModeSwitcher';
-import { ColoredSeparator } from './ColoredSeparator';
 import { useEffect, useRef, useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import { Link, NavLink } from 'react-router-dom';
+
 import {
   DrawerActionTrigger,
   DrawerBackdrop,
@@ -20,7 +17,10 @@ import {
   DrawerContent,
   DrawerRoot,
   DrawerTrigger,
-} from './ui/drawer';
+} from '@/components/ui/drawer';
+import { ColorModeSwitcher } from '@/components/color-mode-switcher';
+import { ColoredSeparator } from '@/components/colored-separator';
+import logo from '@/images/logo.svg';
 
 export const Navbar = () => {
   const routes = ['experience', 'certifications', 'courses', 'projects'];

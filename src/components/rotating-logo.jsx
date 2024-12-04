@@ -1,5 +1,6 @@
 import { Image } from '@chakra-ui/react';
-import logo from '../images/logo.svg';
+
+import logo from '@/images/logo.svg';
 
 export const RotatingLogo = props => {
   return (

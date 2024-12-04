@@ -1,8 +1,8 @@
-import { VerticalTimelineElement } from 'react-vertical-timeline-component';
 import { Heading, Text } from '@chakra-ui/react';
 import PropTypes from 'prop-types';
+import { VerticalTimelineElement } from 'react-vertical-timeline-component';
 
-import { GhostLink } from './GhostLink.js';
+import { GhostLink } from '@/components/ghost-link';
 
 export const ExperienceTimelineElement = ({
   company,

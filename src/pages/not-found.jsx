@@ -2,8 +2,8 @@ import { Code, VStack } from '@chakra-ui/react';
 import { useEffect } from 'react';
 import { Link as ReactRouterLink } from 'react-router-dom';
 
-import { GhostLink } from '../components/GhostLink.js';
-import { RotatingLogo } from '../components/RotatingLogo';
+import { GhostLink } from '@/components/ghost-link';
+import { RotatingLogo } from '@/components/rotating-logo';
 
 export const NotFound = () => {
   useEffect(() => {

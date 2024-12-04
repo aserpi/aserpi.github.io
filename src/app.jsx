@@ -1,16 +1,16 @@
 import { Box, ChakraProvider, Flex, Spacer } from '@chakra-ui/react';
 import { Route, Routes } from 'react-router-dom';
 
-import { system } from './system.js';
-import { Footer } from './components/Footer';
-import { Navbar } from './components/Navbar';
-import { Certifications } from './pages/Certifications';
-import { Courses } from './pages/Courses';
-import { Experience } from './pages/Experience';
-import { Home } from './pages/Home';
-import { NotFound } from './pages/NotFound';
-import { Projects } from './pages/Projects';
-import { ColorModeProvider } from './components/ui/color-mode';
+import { ColorModeProvider } from '@/components/ui/color-mode';
+import { Footer } from '@/components/footer';
+import { Navbar } from '@/components/navbar';
+import { Certifications } from '@/pages/certifications';
+import { Courses } from '@/pages/courses';
+import { Experience } from '@/pages/experience';
+import { Home } from '@/pages/home';
+import { NotFound } from '@/pages/not-found';
+import { Projects } from '@/pages/projects';
+import { system } from '@/system';
 
 export const App = () => {
   return (

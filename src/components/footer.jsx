@@ -10,10 +10,10 @@ import {
 } from '@chakra-ui/react';
 import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa';
 
-import logo from '../images/logo.svg';
-import { ColoredSeparator } from './ColoredSeparator.js';
-import { GhostLink } from './GhostLink';
-import { TextLogo } from './TextLogo';
+import { ColoredSeparator } from '@/components/colored-separator';
+import { GhostLink } from '@/components/ghost-link';
+import { TextLogo } from '@/components/text-logo';
+import logo from '@/images/logo.svg';
 
 export const Footer = () => {
   return (

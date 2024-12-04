@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-import { IconContext } from 'react-icons';
 import {
   FaAws,
   FaDocker,
@@ -10,9 +9,9 @@ import {
 } from 'react-icons/fa';
 import { SiGithubactions } from 'react-icons/si';
 
-import { SplunkIcon } from './icons/SplunkIcon';
-import { useColorModeValue } from './ui/color-mode';
-import { Tag } from './ui/tag';
+import { SplunkIcon } from '@/components/icons/splunk-icon';
+import { useColorModeValue } from '@/components/ui/color-mode';
+import { Tag } from '@/components/ui/tag';
 
 export const ProjectCardTag = ({ tag, ...props }) => {
   const tagFormats = {

@@ -2,7 +2,7 @@ import { Box, Flex, Grid, Heading, Image, Spacer } from '@chakra-ui/react';
 import { Fragment, useEffect } from 'react';
 import Typewriter from 'typewriter-effect';
 
-import logo from '../images/logo.svg';
+import logo from '@/images/logo.svg';
 
 export const Home = () => {
   const typewriterPause = 2000;

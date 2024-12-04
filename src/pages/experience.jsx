@@ -2,11 +2,11 @@ import { useEffect } from 'react';
 import { VerticalTimeline } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 
-import { ExperienceTimelineElement } from '../components/ExperienceTimelineElement';
-import { LoroPianaIconChakra } from '../components/icons/LoroPianaIcon';
-import { MoviriIconChakra } from '../components/icons/MoviriIcon';
-import { SapienzaIconChakra } from '../components/icons/SapienzaIcon';
-import { useColorModeValue } from '../components/ui/color-mode';
+import { LoroPianaIconChakra } from '@/components/icons/loro-piana-icon';
+import { MoviriIconChakra } from '@/components/icons/moviri-icon';
+import { SapienzaIconChakra } from '@/components/icons/sapienza-icon';
+import { useColorModeValue } from '@/components/ui/color-mode';
+import { ExperienceTimelineElement } from '@/components/experience-timeline-element';
 
 export const Experience = () => {
   const iconBackground = useColorModeValue(

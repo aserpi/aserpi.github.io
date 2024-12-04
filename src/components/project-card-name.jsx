@@ -1,9 +1,9 @@
 import { Flex, Heading } from '@chakra-ui/react';
 import PropTypes from 'prop-types';
 
-import { GhostLink } from './GhostLink.js';
-import { useColorModeValue } from './ui/color-mode';
-import { Tag } from './ui/tag';
+import { useColorModeValue } from '@/components/ui/color-mode';
+import { Tag } from '@/components/ui/tag';
+import { GhostLink } from '@/components/ghost-link';
 
 export const ProjectCardName = ({ link, name, tag, ...props }) => {
   const tagVariant = useColorModeValue('outline', 'subtle');
