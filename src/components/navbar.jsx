@@ -77,8 +77,7 @@ export const Navbar = () => {
           {routes.map(route => (
             <Heading
               as={NavLink}
-              /* TODO: only for light system */
-              color="accent"
+              color={{ _light: 'accent' }}
               css={{ '&.active': { display: 'inherit' } }}
               key={route}
               display={{
