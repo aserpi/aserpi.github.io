@@ -2,7 +2,12 @@ import { useEffect } from 'react';
 import { VerticalTimeline } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 
-import { LoroPianaIcon, MoviriIcon, SapienzaIcon } from '@/components/icons';
+import {
+  LoroPianaIcon,
+  MoviriIcon,
+  SapienzaIcon,
+  SatispayIcon,
+} from '@/components/icons';
 import { ExperienceTimelineElement } from '@/components/timeline';
 import { useColorModeValue } from '@/components/user-interaction';
 
@@ -19,15 +24,26 @@ export const Experience = () => {
   );
   const experiences = [
     {
+      company: 'Satispay',
+      company_name: 'https://www.satispay.com/',
+      date: '2025/03 – present',
+      desc: ['TBD'],
+      icon: (
+        <SatispayIcon transform={{ base: 'scale(0.85)', sm: 'scale(1.25)' }} />
+      ),
+      iconStyle: { background: iconBackground },
+      title: 'Cyber Security Engineer',
+    },
+    {
       company: 'Loro Piana',
       companyUrl:
         'https://www.lvmh.com/houses/fashion-leather-goods/loro-piana/',
-      date: '2023/07 – present',
+      date: '2023/07 – 2025/03',
       desc: [
-        'Enhancing the SOC to accelerate the resolution of security incidents and reduce false positives.',
-        'Overseeing penetration testing and remediation activities.',
-        'Collaborating with auditors and coordinating outsourced projects for the implementation/enhancement of cyber security services.',
-        'Contributing to the enforcement of security and privacy by design, including OT and IoT systems.',
+        'Improved SOC operations by rewriting the incident response playbook and creating dedicated investigation resources in the SIEM.',
+        'Performed RCA for critical security incidents and helped assess their operational and legal impact.',
+        'Led cloud and Active Directory hardening efforts, improving compliance with internal and industry standards.',
+        'Started a bug bounty program that found critical vulnerabilities and oversaw their remediation.',
       ],
       icon: (
         <LoroPianaIcon overflow="visible" transform={{ sm: 'scale(1.5)' }} />
