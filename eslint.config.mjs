@@ -1,29 +1,11 @@
 import react from 'eslint-plugin-react';
 import globals from 'globals';
-import path from 'node:path';
-import { fileURLToPath } from 'node:url';
 import js from '@eslint/js';
-import { FlatCompat } from '@eslint/eslintrc';
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-const compat = new FlatCompat({
-  baseDirectory: __dirname,
-  recommendedConfig: js.configs.recommended,
-  allConfig: js.configs.all,
-});
 
 export default [
+  js.configs.recommended,
   {
-    ignores: ['dist/*'],
-  },
-  ...compat.extends(
-    'eslint:recommended',
-    'plugin:react/recommended',
-    'plugin:react/jsx-runtime',
-    'prettier'
-  ),
-  {
+    files: ['**/*.{js,mjs,cjs,jsx,mjsx,ts,tsx,mtsx}'],
     languageOptions: {
       ecmaVersion: 'latest',
       globals: {
@@ -34,16 +16,13 @@ export default [
           jsx: true,
         },
       },
-      sourceType: 'module',
     },
     plugins: {
       react,
     },
-    rules: {},
-    settings: {
-      react: {
-        version: 'detect',
-      },
+    rules: {
+      ...react.configs.flat.recommended.rules,
+      ...react.configs.flat['jsx-runtime'].rules,
     },
   },
 ];
