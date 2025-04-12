@@ -1,5 +1,6 @@
 import { Tag as ChakraTag } from '@chakra-ui/react';
 import * as React from 'react';
+import PropTypes from 'prop-types';
 
 export const Tag = React.forwardRef(function Tag(props, ref) {
   const {
@@ -26,3 +27,11 @@ export const Tag = React.forwardRef(function Tag(props, ref) {
     </ChakraTag.Root>
   );
 });
+
+Tag.propTypes = {
+  children: PropTypes.node,
+  closable: PropTypes.bool,
+  endElement: PropTypes.node,
+  onClose: PropTypes.func,
+  startElement: PropTypes.node,
+};

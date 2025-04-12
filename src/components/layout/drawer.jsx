@@ -1,5 +1,6 @@
 import { Drawer as ChakraDrawer, Portal } from '@chakra-ui/react';
 import * as React from 'react';
+import PropTypes from 'prop-types';
 
 export const DrawerContent = React.forwardRef(
   function DrawerContent(props, ref) {
@@ -15,6 +16,13 @@ export const DrawerContent = React.forwardRef(
     );
   }
 );
+
+DrawerContent.propTypes = {
+  children: PropTypes.node.isRequired,
+  portalled: PropTypes.bool,
+  portalRef: PropTypes.func,
+  offset: PropTypes.number,
+};
 
 export const DrawerTrigger = ChakraDrawer.Trigger;
 export const DrawerRoot = ChakraDrawer.Root;
