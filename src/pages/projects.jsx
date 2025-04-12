@@ -25,11 +25,11 @@ export const Projects = () => {
       tags: ['aws', 'githubActions', 'python', 'splunk'],
     },
     {
-      desc: 'New and improved version of the app that adds JMESPath expressions to Splunk.',
+      desc: 'This add-on delivers two custom commands to format and elaborate JSON documents using JMESPath Community.',
       category: 'Splunk add-on',
-      name: 'JMESPath for Splunk v2',
+      name: 'JMESPath Community for Splunk',
       prerelease: 'wip',
-      repo: 'https://github.com/aserpi/jmespath/tree/develop',
+      repo: 'https://github.com/aserpi/jmespath/tree/jmespath_community',
       tags: ['python', 'splunk'],
     },
     {
