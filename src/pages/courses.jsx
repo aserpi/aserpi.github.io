@@ -7,6 +7,22 @@ export const Courses = () => {
   const courses = [
     {
       desc: [
+        'This course covers in-depth all the new topics on the AWS Certified Security Specialty SCS-C02 exam. It solidifies the knowledge you already have and put it in perspective through the study of various solutions architectures and services.',
+      ],
+      link: 'https://www.udemy.com/course/ultimate-aws-certified-security-specialty/',
+      name: 'AWS Certified Security - Specialty (SCS-C02)',
+      organization: 'AWS',
+    },
+    {
+      desc: [
+        "This course covers in-depth all the new topics on the AWS Certified DevOps Engineer Professional DOP-C02 exam. It's packed with practical knowledge on how to use AWS inside and out as a DevOps.",
+      ],
+      link: 'https://www.udemy.com/course/aws-certified-devops-engineer-professional-hands-on/',
+      name: 'AWS Certified DevOps Engineer - Professional (DOP-C02)',
+      organization: 'AWS',
+    },
+    {
+      desc: [
         'This course provides IT Security Professionals with the knowledge and skills needed to implement security controls, maintain an organization’s security posture, and identify and remediate security vulnerabilities in Microsoft Azure.',
         'This course includes security for identity and access, platform protection, data and applications, and security operations.',
       ],
