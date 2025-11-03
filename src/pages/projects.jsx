@@ -59,13 +59,13 @@ export const Projects = () => {
     {
       desc: [
         'Private documentation on cyber security topics, tools, standards, and regulations spanning over 20 000 words.',
-        'The website is built using a self-managed Gitlab runner.',
+        'The website is hosted on Cloudflare Pages.',
       ],
       category: 'website',
       name: 'Cyber security docs',
       link: 'https://docs.aserpi.it',
-      repo: 'https://gitlab.com/alessandro.serpi/docs',
-      tags: ['docker', 'gitlabCicd'],
+      repo: 'https://github.com/aserpi/cyber-security-docs',
+      tags: ['cloudflarePages'],
     },
   ];
 

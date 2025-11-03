@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import {
   FaAws,
+  FaCloudflare,
   FaDocker,
   FaGitlab,
   FaJsSquare,
@@ -18,6 +19,10 @@ export const ShowcaseCardTag = ({ tag, ...props }) => {
     aws: {
       icon: FaAws,
       name: 'AWS',
+    },
+    cloudflarePages: {
+      icon: FaCloudflare,
+      name: 'Cloudflare Pages',
     },
     docker: {
       icon: FaDocker,
