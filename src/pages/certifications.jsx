@@ -33,7 +33,7 @@ export const Certifications = () => {
       organization: 'Splunk',
     },
     {
-      expires: '2026-01-24',
+      expires: '2027-01-24',
       firstEarned: '2023-01-23',
       image: sc_200,
       link: 'https://learn.microsoft.com/api/credentials/share/it-it/aserpi/7D080407B702A5A4?sharingId=347A857BED5B7846',
