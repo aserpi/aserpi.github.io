@@ -48,7 +48,7 @@ export const Certifications = () => {
       organization: 'Microsoft',
     },
     {
-      expires: '2024-12-29',
+      expires: '2025-12-29',
       firstEarned: '2022-12-29',
       image: ccoe_admin,
       link: 'https://ccoecertificates.cribl.io/579e5eee-819b-462a-982d-26d96a932984',
@@ -64,7 +64,7 @@ export const Certifications = () => {
       organization: 'Splunk',
     },
     {
-      expires: '2024-11-11',
+      expires: '2025-11-11',
       firstEarned: '2022-11-11',
       image: ccoe_user,
       link: 'https://ccoecertificates.cribl.io/f1f417af-94c2-4d0a-a3db-6727091ba4fd',
