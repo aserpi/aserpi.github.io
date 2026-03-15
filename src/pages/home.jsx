@@ -51,10 +51,11 @@ export const Home = () => {
                 };
 
                 typewriter
-                  .rewrite('a cyber security specialist.', -2)
+                  .rewrite('a cyber security engineer.', -2)
+                  .rewrite('Splunk Cybersecurity Defense Engineer.')
                   .rewrite('Microsoft Security Operations Analyst.')
-                  .rewrite('Splunk Enterprise Admin.')
                   .rewrite('Cybereason Threat Hunter.')
+                  .rewrite('Splunk Enterprise Admin.')
                   .rewrite('Cribl Admin.')
                   .rewrite('curious mind.', 14)
                   .typeString('lways learning, always experimenting.')
