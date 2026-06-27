@@ -25,14 +25,6 @@ export const Projects = () => {
       tags: ['aws', 'githubActions', 'python', 'splunk'],
     },
     {
-      desc: 'This add-on delivers two custom commands to format and elaborate JSON documents using JMESPath Community.',
-      category: 'Splunk add-on',
-      name: 'JMESPath Community for Splunk',
-      prerelease: 'wip',
-      repo: 'https://github.com/aserpi/jmespath/tree/jmespath_community',
-      tags: ['python', 'splunk'],
-    },
-    {
       desc: 'This add-on delivers an alert action that generates Simple XML dashboards from search results and optionally schedules their PDF delivery.',
       category: 'Splunk add-on',
       link: 'https://splunkbase.splunk.com/app/6868',
@@ -49,12 +41,12 @@ export const Projects = () => {
       tags: ['githubActions', 'splunk'],
     },
     {
-      desc: 'Pygments lexer for the Splunk Search Processing Language (SPL). The project is in its early phases.',
-      category: 'Open source contributions',
-      name: 'SplLexer',
+      desc: 'This add-on delivers two custom commands to format and elaborate JSON documents using JMESPath Community.',
+      category: 'Splunk add-on',
+      name: 'JMESPath Community for Splunk',
       prerelease: 'wip',
-      repo: 'https://github.com/aserpi/spl-lexer/tree/develop',
-      tags: ['python'],
+      repo: 'https://github.com/aserpi/jmespath/tree/jmespath_community',
+      tags: ['python', 'splunk'],
     },
     {
       desc: [
