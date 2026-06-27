@@ -26,17 +26,35 @@ export const Experience = () => {
     {
       company: 'Satispay',
       companyUrl: 'https://www.satispay.com/',
-      date: '2025/03 – present',
+      date: '2026/05 – present',
       desc: [
-        'Leading the cloud and IaC hardening program, prioritizing the activities based on risk, cost, and effort.',
-        'Defining and automating the response process for cyber security incidents.',
-        'Managing threat intelligence sources and integrating them into the alerting and investigation processes.',
+        'Designing, tuning, and documenting correlation rules, alerts, and reports in the SIEM.',
+        'Building and maintaining Splunk add-ons, ingestion pipelines, and the CI/CD that ships them.',
+        'Triaging, investigating, and documenting security incidents end-to-end, owning postmortems and follow-up remediation.',
+        'Driving AWS security architecture, championing zero trust and least privilege.',
+        'Directing the IT Ops team in managing and optimizing SaaS ecosystems, IAM, and complex automation workflows.',
+        'Overseeing the IT Support team to deliver helpdesk services and office network management.',
       ],
       icon: (
         <SatispayIcon transform={{ base: 'scale(0.85)', sm: 'scale(1.25)' }} />
       ),
       iconStyle: { background: iconBackground },
-      title: 'Cyber Security Engineer',
+      title: 'Defensive Security Engineer III & Acting IT Manager',
+    },
+    {
+      company: 'Satispay',
+      companyUrl: 'https://www.satispay.com/',
+      date: '2025/03 – 2026/04',
+      desc: [
+        'Leading the cloud and IaC hardening program, prioritizing the activities based on risk, cost, and effort.',
+        'Managing threat intelligence sources and integrating them into the alerting and investigation processes.',
+        'Defining and automating the response process for cyber security incidents.',
+      ],
+      icon: (
+        <SatispayIcon transform={{ base: 'scale(0.85)', sm: 'scale(1.25)' }} />
+      ),
+      iconStyle: { background: iconBackground },
+      title: 'Cloud Security Engineer',
     },
     {
       company: 'Loro Piana',
