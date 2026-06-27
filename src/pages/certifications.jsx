@@ -56,10 +56,10 @@ export const Certifications = () => {
       organization: 'Cribl',
     },
     {
-      expires: '2025-12-28',
+      expires: '2029-03-20',
       firstEarned: '2022-12-28',
       image: splk_1003,
-      link: 'https://www.credly.com/badges/a04de44b-3da3-4487-9981-e2794a19acb5/public_url',
+      link: 'https://www.credly.com/badges/ec807d0f-add0-4429-af5c-d18506b08a3e/public_url',
       name: 'Splunk Enterprise Certified Administrator',
       organization: 'Splunk',
     },
