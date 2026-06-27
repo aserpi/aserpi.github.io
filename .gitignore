@@ -1,12 +1,16 @@
 ### AI ###
 # Crush
-.crush
-CRUSH.md
+.crush/
+
+# Google Antigravity
+.antigravitycli/
+
 
 ### IDE ###
 # JetBrains
 .idea/
 *.iml
+
 
 ### Node ###
 # Logs
