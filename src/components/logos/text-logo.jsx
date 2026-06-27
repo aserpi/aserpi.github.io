@@ -2,7 +2,7 @@ import { useId } from 'react';
 
 import { Tooltip, useColorMode } from '@/components/user-interaction';
 
-export const TextLogo = props => {
+export const TextLogo = (props) => {
   const { colorMode } = useColorMode();
   const fill = colorMode === 'light' ? '#000' : '#FFF';
   const id = useId();

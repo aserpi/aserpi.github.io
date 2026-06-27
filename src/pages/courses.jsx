@@ -107,7 +107,7 @@ export const Courses = () => {
       marginX={38}
       maxWidth={1280}
     >
-      {courses.map(course => (
+      {courses.map((course) => (
         <ShowcaseCard
           category={course.organization}
           description={course.desc}

@@ -35,7 +35,7 @@ export const Home = () => {
           <Heading size={{ base: '4xl', md: '5xl' }}>Alessandro Serpi,</Heading>
           <Heading marginTop={1} size={{ base: '2xl', md: '3xl' }}>
             <Typewriter
-              onInit={typewriter => {
+              onInit={(typewriter) => {
                 typewriter.rewrite = (str, deleteChars) => {
                   deleteChars = !Number.isInteger(deleteChars)
                     ? str.length

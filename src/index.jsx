@@ -1,6 +1,6 @@
 import { StrictMode } from 'react';
 import * as ReactDOM from 'react-dom/client';
-import { HashRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router';
 
 import { App } from '@/app';
 
@@ -12,7 +12,7 @@ root.render(
     <HashRouter>
       <App />
     </HashRouter>
-  </StrictMode>
+  </StrictMode>,
 );
 
 // If you want your app to work offline and load faster, you can change

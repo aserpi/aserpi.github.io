@@ -14,7 +14,7 @@ import { useColorModeValue } from '@/components/user-interaction';
 export const Experience = () => {
   const iconBackground = useColorModeValue(
     'var(--chakra-colors-bg-card)',
-    'white'
+    'white',
   );
   const sapienzaIcon = (
     <SapienzaIcon

@@ -1,5 +1,5 @@
 import { Box, ChakraProvider, Flex, Spacer } from '@chakra-ui/react';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router';
 
 import { Footer } from '@/components/layout/footer';
 import { Navbar } from '@/components/layout/navbar';

@@ -70,7 +70,7 @@ export const ShowcaseCard = ({
       {Array.isArray(tags) && tags.length > 0 ? (
         <Card.Footer paddingTop={0}>
           <HStack wrap="wrap">
-            {tags.map(tag => (
+            {tags.map((tag) => (
               <ShowcaseCardTag key={tag} tag={tag} />
             ))}
           </HStack>

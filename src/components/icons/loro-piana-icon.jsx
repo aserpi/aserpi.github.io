@@ -1,6 +1,6 @@
 import { chakra, Icon } from '@chakra-ui/react';
 
-export const LoroPianaIcon = props => (
+export const LoroPianaIcon = (props) => (
   <Icon viewBox="0 0 2358.16 2143.6" {...props}>
     <svg>
       <defs>

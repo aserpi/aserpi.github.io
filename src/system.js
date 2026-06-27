@@ -113,5 +113,5 @@ export const system = createSystem(
         },
       },
     },
-  })
+  }),
 );

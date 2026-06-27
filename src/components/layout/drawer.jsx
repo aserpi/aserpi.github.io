@@ -14,7 +14,7 @@ export const DrawerContent = React.forwardRef(
         </ChakraDrawer.Positioner>
       </Portal>
     );
-  }
+  },
 );
 
 DrawerContent.propTypes = {

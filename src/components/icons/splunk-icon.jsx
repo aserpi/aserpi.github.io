@@ -1,6 +1,6 @@
 import { Icon } from '@chakra-ui/react';
 
-export const SplunkIcon = props => {
+export const SplunkIcon = (props) => {
   return (
     <Icon viewBox="0 0 14.61 17.62" fill="currentcolor" {...props}>
       <svg>

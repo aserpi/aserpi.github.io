@@ -8,7 +8,7 @@ import {
 } from '@chakra-ui/react';
 import { useEffect, useRef, useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router';
 
 import {
   ColoredSeparator,
@@ -40,7 +40,7 @@ export const Navbar = () => {
   return (
     <DrawerRoot
       finalFocusRef={btnRef}
-      onOpenChange={e => setOpen(e.open)}
+      onOpenChange={(e) => setOpen(e.open)}
       open={open}
       placement="end"
     >
@@ -74,7 +74,7 @@ export const Navbar = () => {
               }}
             />
           </Link>
-          {routes.map(route => (
+          {routes.map((route) => (
             <Heading
               as={NavLink}
               color={{ _light: 'accent' }}
@@ -93,7 +93,7 @@ export const Navbar = () => {
               {route}
             </Heading>
           ))}
-          {routes.map(route => (
+          {routes.map((route) => (
             <Heading
               as={NavLink}
               css={{
@@ -125,7 +125,7 @@ export const Navbar = () => {
               aria-label={`${open ? 'Close' : 'Open'} navigation drawer`}
               display={{ base: 'inherit', md: 'none' }}
               fontSize="lg"
-              onClick={e => setOpen(e.open)}
+              onClick={(e) => setOpen(e.open)}
               paddingTop={{ base: 2, md: 0 }}
               ref={btnRef}
               size="md"
@@ -143,14 +143,14 @@ export const Navbar = () => {
       <DrawerContent bg="bg">
         <DrawerBody marginTop={20}>
           <Flex direction="column" gap={4} justifyContent="left">
-            {routes.map(route => (
+            {routes.map((route) => (
               <DrawerActionTrigger key={route} asChild>
                 <Heading
                   as={NavLink}
                   css={{ '&.active': { color: 'accent' } }}
                   fontSize="3xl"
                   key={route}
-                  onClick={e => setOpen(e.open)}
+                  onClick={(e) => setOpen(e.open)}
                   textTransform="uppercase"
                   to={`/${route}`}
                 >

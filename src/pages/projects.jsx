@@ -82,7 +82,7 @@ export const Projects = () => {
       marginX={38}
       maxWidth={1280}
     >
-      {projects.map(project => (
+      {projects.map((project) => (
         <ShowcaseCard
           category={project.category}
           description={project.desc}

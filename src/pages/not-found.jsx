@@ -1,6 +1,6 @@
 import { Code, VStack } from '@chakra-ui/react';
 import { useEffect } from 'react';
-import { Link as ReactRouterLink } from 'react-router-dom';
+import { Link as ReactRouterLink } from 'react-router';
 
 import { RotatingLogo } from '@/components/logos';
 import { GhostLink } from '@/components/user-interaction';

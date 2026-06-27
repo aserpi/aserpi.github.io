@@ -1,6 +1,6 @@
 import { chakra, Icon } from '@chakra-ui/react';
 
-export const MoviriIcon = props => (
+export const MoviriIcon = (props) => (
   <Icon viewBox="0 0 112 72.8" {...props}>
     <svg>
       <defs>

@@ -53,5 +53,5 @@ export const ColorModeButton = React.forwardRef(
         </IconButton>
       </ClientOnly>
     );
-  }
+  },
 );
