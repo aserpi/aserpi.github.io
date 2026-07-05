@@ -7,6 +7,42 @@ export const system = createSystem(
       body: {
         pointerEvents: 'unset!',
       },
+      '.vertical-timeline': {
+        paddingBottom: '0!',
+        marginBottom: '2em',
+      },
+      '.vertical-timeline-element:first-child::before': {
+        content: '""',
+        position: 'absolute',
+        top: '-2em',
+        left: '18px',
+        width: '4px',
+        height: '2em',
+        background:
+          'repeating-linear-gradient(to bottom, var(--line-color) 0px 4px, var(--chakra-colors-bg) 4px 8px)',
+      },
+      '.vertical-timeline-element:last-child::before': {
+        content: '""',
+        position: 'absolute',
+        top: '40px',
+        left: '18px',
+        width: '4px',
+        bottom: '0',
+        background: 'var(--chakra-colors-bg)',
+      },
+      '@media only screen and (min-width: 1170px)': {
+        '.vertical-timeline--two-columns .vertical-timeline-element:first-child::before':
+          {
+            left: '50%',
+            marginLeft: '-2px',
+          },
+        '.vertical-timeline--two-columns .vertical-timeline-element:last-child::before':
+          {
+            left: '50%',
+            marginLeft: '-2px',
+            top: '60px',
+          },
+      },
       '.vertical-timeline-element-date': {
         fontSize: '2xl!',
         opacity: 'unset!',
