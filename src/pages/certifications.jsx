@@ -145,6 +145,7 @@ export const Certifications = () => {
             link={certification.link}
             maxWidth={400}
             minWidth={{ md: 400 }}
+            width={{ base: '100%', md: 'auto' }}
             title={certification.name}
           />
         );
