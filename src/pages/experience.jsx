@@ -75,7 +75,7 @@ export const Experience = () => {
     },
     {
       company: 'Moviri',
-      companyUrl: 'https://www.moviri.com/cybersecurity',
+      companyUrl: 'https://consulting.moviri.com/cybersecurity/',
       date: '2021/04 – 2023/07',
       desc: [
         'Designed and administered fault-tolerant SIEM/SOAR solutions with custom integrations and data source monitoring, providing full visibility into on-premises and cloud environments.',
