@@ -98,7 +98,7 @@ export const Footer = () => {
         textAlign="center"
       >
         <Text color="subtle" fontSize="sm" margin="auto">
-          &copy; 2024–2025 Alessandro Serpi. All rights reserved.
+          &copy; 2024–2026 Alessandro Serpi. All rights reserved.
         </Text>
       </GridItem>
     </Grid>
