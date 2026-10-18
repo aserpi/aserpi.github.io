@@ -26,7 +26,7 @@ export const Experience = () => {
     {
       company: 'Satispay',
       companyUrl: 'https://www.satispay.com/',
-      date: '2026/05 – present',
+      date: '2026/04 – present',
       desc: [
         'Designing, tuning, and documenting correlation rules, alerts, and reports in the SIEM.',
         'Building and maintaining Splunk add-ons, ingestion pipelines, and the CI/CD that ships them.',
@@ -46,9 +46,9 @@ export const Experience = () => {
       companyUrl: 'https://www.satispay.com/',
       date: '2025/03 – 2026/04',
       desc: [
-        'Leading the cloud and IaC hardening program, prioritizing the activities based on risk, cost, and effort.',
-        'Managing threat intelligence sources and integrating them into the alerting and investigation processes.',
-        'Defining and automating the response process for cyber security incidents.',
+        'Led the cloud and IaC hardening program, prioritizing the activities based on risk, cost, and effort.',
+        'Managed threat intelligence sources and integrating them into the alerting and investigation processes.',
+        'Defined and automating the response process for cyber security incidents.',
       ],
       icon: (
         <SatispayIcon transform={{ base: 'scale(0.85)', sm: 'scale(1.25)' }} />
