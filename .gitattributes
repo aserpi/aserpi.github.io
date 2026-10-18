@@ -1,0 +1,5 @@
+# Auto-detect text files and normalize line endings
+* text=auto
+
+# Ensure husky hooks and shell scripts always use LF line endings
+.husky/* text eol=lf
